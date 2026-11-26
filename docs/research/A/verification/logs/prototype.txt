@@ -1,0 +1,16 @@
+✔ T06 committed and uncommitted process exits are distinguishable and replay is idempotent (116.019846ms)
+✔ T07 whole batch rollback and stale external revision rejection (7.321325ms)
+✔ T08 persisted approval, scope binding and new directive after reconnect (8.767415ms)
+✔ T09 bounded independent synthetic workers, errors, cancellation and remaining work (11.449216ms)
+✔ T10 deterministic fictional compression, retention and live result reference (612.203004ms)
+ℹ {"originalRecords":600,"cycles":3,"retained":8,"beforeUtf8Bytes":75247,"afterUtf8Bytes":4145,"tokenCounts":{"cl100k_base":[27933,1539],"o200k_base":[20210,1116]}}
+✔ T15 external storage partial commit is visible, retries and guarded rollback preserve edits (10.848145ms)
+✔ T16 independent HTTP model requests share a persisted call budget (72.378272ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 935.160113

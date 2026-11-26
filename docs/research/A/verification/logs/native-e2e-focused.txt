@@ -1,0 +1,110 @@
+
+> test:e2e
+> playwright test frontend/ReasoningHiddenBlocks.e2e.js --workers=1 --grep confirming message edit with reasoning edit open|changing whitespace-only reasoning to visible content|changing whitespace-only reasoning to different whitespace --reporter=line --output /workspace/scratch/st-focused-artifacts
+
+
+Running 3 tests using 1 worker
+
+(node:28338) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:28338) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/3] frontend/ReasoningHiddenBlocks.e2e.js:368:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after confirming message edit with reasoning edit open
+  1) frontend/ReasoningHiddenBlocks.e2e.js:368:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after confirming message edit with reasoning edit open
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 2
+    + Received  + 1
+
+    -
+    -
+    + undefined
+
+      438 |         expect(result.afterDone.detailsOpen).toBe(false);
+      439 |         expect(result.afterDone.messageValue).toBe('Foo edited');
+    > 440 |         expect(result.afterDone.reasoningValue).toBe('\n');
+          |                                                 ^
+      441 |     });
+      442 |
+      443 |     test('collapses whitespace-only reasoning after canceling message edit with reasoning edit open', async ({ page }) => {
+        at <repo>/tests/frontend/ReasoningHiddenBlocks.e2e.js:440:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../scratch/st-focused-artifacts/frontend-ReasoningHiddenBl-7981a-it-with-reasoning-edit-open/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../scratch/st-focused-artifacts/frontend-ReasoningHiddenBl-7981a-it-with-reasoning-edit-open/error-context.md
+
+
+(node:28445) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:28445) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[2/3] frontend/ReasoningHiddenBlocks.e2e.js:657:3 › Reasoning hidden blocks › keeps reasoning expanded after changing whitespace-only reasoning to visible content
+  2) frontend/ReasoningHiddenBlocks.e2e.js:657:3 › Reasoning hidden blocks › keeps reasoning expanded after changing whitespace-only reasoning to visible content
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "visible reasoning"
+    Received string:    "undefined"
+
+      701 |         expect(result.hasContent).toBe('true');
+      702 |         expect(result.detailsOpen).toBe(true);
+    > 703 |         expect(result.reasoningText).toContain('visible reasoning');
+          |                                      ^
+      704 |     });
+      705 |
+      706 |     test('collapses reasoning after changing whitespace-only reasoning to different whitespace', async ({ page }) => {
+        at <repo>/tests/frontend/ReasoningHiddenBlocks.e2e.js:703:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../scratch/st-focused-artifacts/frontend-ReasoningHiddenBl-6dd3b-easoning-to-visible-content/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../scratch/st-focused-artifacts/frontend-ReasoningHiddenBl-6dd3b-easoning-to-visible-content/error-context.md
+
+
+(node:28550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:28550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/3] frontend/ReasoningHiddenBlocks.e2e.js:699:3 › Reasoning hidden blocks › collapses reasoning after changing whitespace-only reasoning to different whitespace
+  3) frontend/ReasoningHiddenBlocks.e2e.js:699:3 › Reasoning hidden blocks › collapses reasoning after changing whitespace-only reasoning to different whitespace
+
+    Error: expect(received).toBeNull()
+
+    Received: "true"
+
+      736 |
+      737 |         expect(result.textareaCount).toBe(0);
+    > 738 |         expect(result.hasContent).toBeNull();
+          |                                   ^
+      739 |         expect(result.detailsOpen).toBe(false);
+      740 |     });
+      741 | });
+        at <repo>/tests/frontend/ReasoningHiddenBlocks.e2e.js:738:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../scratch/st-focused-artifacts/frontend-ReasoningHiddenBl-74d7a-ing-to-different-whitespace/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../scratch/st-focused-artifacts/frontend-ReasoningHiddenBl-74d7a-ing-to-different-whitespace/error-context.md
+
+
+  3 failed
+    frontend/ReasoningHiddenBlocks.e2e.js:368:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after confirming message edit with reasoning edit open
+    frontend/ReasoningHiddenBlocks.e2e.js:657:3 › Reasoning hidden blocks › keeps reasoning expanded after changing whitespace-only reasoning to visible content
+    frontend/ReasoningHiddenBlocks.e2e.js:699:3 › Reasoning hidden blocks › collapses reasoning after changing whitespace-only reasoning to different whitespace

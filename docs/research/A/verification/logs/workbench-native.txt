@@ -1,0 +1,22 @@
+
+> test
+> node --test
+
+✔ 确认模式先保存提案，应用时只修改正文并可撤销 (4.903724ms)
+✔ 外部修改后拒绝应用旧提案，避免覆盖 (2.656926ms)
+✔ 读取之后条目变化时，拒绝基于旧内容提交修改 (0.459745ms)
+✔ 直接模式可以创建条目并撤销，切换世界书时拒绝跨书撤销 (0.843615ms)
+✔ 保存失败时保留修改前快照并标记结果待核实 (0.567478ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 117.481668
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.3
+npm notice To update run: npm install -g npm@12.2.3
+npm notice

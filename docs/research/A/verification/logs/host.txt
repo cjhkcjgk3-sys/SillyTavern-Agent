@@ -1,0 +1,413 @@
+pageerror Unexpected token 'I', "Internal S"... is not valid JSON
+pageerror Unexpected token 'I', "Internal S"... is not valid JSON
+{
+  "checks": [
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T19",
+    "T20"
+  ],
+  "trace": [
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "oldPrompt": true,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"total\":1,\"entries\":[{\"uid\":0,\"title\":\"Capital\",\"keys\":[\"researchcity\"],\"excerpt\":\"LOC_NORTH\"}]}",
+      "oldPrompt": true,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"uid\":0,\"title\":\"Capital\",\"keys\":[\"researchcity\"],\"content\":\"LOC_NORTH\",\"revision\":\"fixture-id\"}",
+      "oldPrompt": true,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"status\":\"已写入并复核\",\"title\":\"Capital\",\"uid\":0}",
+      "oldPrompt": false,
+      "newPrompt": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"uid\":0,\"title\":\"Capital\",\"keys\":[\"researchcity\"],\"content\":\"LOC_SOUTH\",\"revision\":\"fixture-id\"}",
+      "oldPrompt": false,
+      "newPrompt": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"total\":1,\"entries\":[{\"uid\":1,\"title\":\"Harbor\",\"keys\":[\"harbor\"],\"excerpt\":\"ROUTE_NORTH\"}]}",
+      "oldPrompt": false,
+      "newPrompt": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"uid\":1,\"title\":\"Harbor\",\"keys\":[\"harbor\"],\"content\":\"ROUTE_NORTH\",\"revision\":\"fixture-id\"}",
+      "oldPrompt": false,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"status\":\"已写入并复核\",\"title\":\"Harbor\",\"uid\":1}",
+      "oldPrompt": false,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": true,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"status\":\"已写入并复核\",\"title\":\"Harbor\",\"uid\":1}",
+      "oldPrompt": false,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": true,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"status\":\"已写入并复核\",\"title\":\"Bridge\",\"uid\":2}",
+      "oldPrompt": false,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"status\":\"已写入并复核\",\"title\":\"Bridge\",\"uid\":2}",
+      "oldPrompt": false,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"uid\":0,\"title\":\"Capital\",\"keys\":[\"researchcity\"],\"content\":\"LOC_SOUTH\",\"revision\":\"fixture-id\"}",
+      "oldPrompt": false,
+      "newPrompt": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"status\":\"等待用户确认，尚未写入世界书\",\"title\":\"Capital\",\"id\":\"fixture-id\"}",
+      "oldPrompt": false,
+      "newPrompt": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"status\":\"等待用户确认，尚未写入世界书\",\"title\":\"Capital\",\"id\":\"fixture-id\"}",
+      "oldPrompt": false,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": false,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"uid\":0,\"title\":\"Capital\",\"keys\":[\"researchcity\"],\"content\":\"LOC_SOUTH\",\"revision\":\"fixture-id\"}",
+      "oldPrompt": false,
+      "newPrompt": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "research-alias",
+      "stream": true,
+      "tools": [
+        "worldbook_workbench_search",
+        "worldbook_workbench_read",
+        "worldbook_workbench_write"
+      ],
+      "toolResult": "{\"uid\":0,\"title\":\"Capital\",\"keys\":[\"researchcity\"],\"content\":\"LOC_SOUTH\",\"revision\":\"fixture-id\"}",
+      "oldPrompt": false,
+      "newPrompt": false
+    }
+  ],
+  "vertex": [
+    {
+      "path": "/v1/publishers/google/models/gemini-3.7-flash:generateContent",
+      "modalities": [
+        "image/png",
+        "audio/wav",
+        "video/mp4"
+      ],
+      "tools": [
+        "function_declarations"
+      ],
+      "mode": "AUTO",
+      "config": {
+        "maxOutputTokens": 64,
+        "thinkingConfig": {
+          "includeThoughts": true,
+          "thinkingLevel": "low"
+        }
+      }
+    },
+    {
+      "path": "/v1/publishers/google/models/research-alias:generateContent",
+      "modalities": [
+        "image/png",
+        "audio/wav",
+        "video/mp4"
+      ],
+      "tools": [
+        "function_declarations"
+      ],
+      "mode": "AUTO",
+      "config": {
+        "candidateCount": 1,
+        "maxOutputTokens": 64,
+        "temperature": 0.5,
+        "topP": 0.8,
+        "topK": 16
+      }
+    },
+    {
+      "path": "/v1/publishers/google/models/gemini-3.7-flash:streamGenerateContent?alt=sse",
+      "modalities": [
+        "image/png",
+        "audio/wav",
+        "video/mp4"
+      ],
+      "tools": [
+        "google_search"
+      ],
+      "config": {
+        "maxOutputTokens": 64,
+        "thinkingConfig": {
+          "includeThoughts": true,
+          "thinkingLevel": "low"
+        }
+      }
+    },
+    {
+      "path": "/v1/publishers/google/models/rate-limit:generateContent",
+      "modalities": [
+        "image/png",
+        "audio/wav",
+        "video/mp4"
+      ],
+      "tools": [
+        "function_declarations"
+      ],
+      "mode": "AUTO",
+      "config": {
+        "candidateCount": 1,
+        "maxOutputTokens": 64,
+        "temperature": 0.5,
+        "topP": 0.8,
+        "topK": 16
+      }
+    },
+    {
+      "path": "/v1/publishers/google/models/gemini-3.7-flash:generateContent",
+      "modalities": [
+        "image/png",
+        "audio/wav",
+        "video/mp4"
+      ],
+      "config": {
+        "maxOutputTokens": 64,
+        "responseMimeType": "application/json",
+        "responseSchema": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "key"
+          ]
+        },
+        "thinkingConfig": {
+          "includeThoughts": true,
+          "thinkingLevel": "low"
+        }
+      }
+    },
+    {
+      "path": "/v1/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "modalities": [
+        "image/png",
+        "audio/wav",
+        "video/mp4"
+      ],
+      "config": {
+        "candidateCount": 1,
+        "maxOutputTokens": 64,
+        "temperature": 0.5,
+        "topP": 0.8,
+        "topK": 16,
+        "responseModalities": [
+          "text",
+          "image"
+        ],
+        "imageConfig": {
+          "imageSize": "undefined",
+          "aspectRatio": "undefined"
+        },
+        "thinkingConfig": {
+          "includeThoughts": true,
+          "thinkingLevel": "low"
+        }
+      }
+    }
+  ],
+  "api": {
+    "frontend": {
+      "known": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "alias": [
+        false,
+        false,
+        false,
+        true
+      ]
+    },
+    "known": {
+      "status": 200,
+      "body": "{\"choices\":[{\"message\":{\"content\":\"synthetic vertex response\"}}],\"responseContent\":{\"role\":\"model\",\"parts\":[{\"text\":\"synthetic vertex response\"}]}}"
+    },
+    "alias": {
+      "status": 200,
+      "body": "{\"choices\":[{\"message\":{\"content\":\"synthetic vertex response\"}}],\"responseContent\":{\"role\":\"model\",\"parts\":[{\"text\":\"synthetic vertex response\"}]}}"
+    },
+    "search": {
+      "status": 200,
+      "body": "data: {\"candidates\":[{\"content\":{\"role\":\"model\",\"parts\":[{\"text\":\"synthetic vertex response\"}]},\"finishReason\":\"MAX_TOKENS\"}],\"usageMetadata\":{\"promptTokenCount\":31,\"candidatesTokenCount\":3,\"thoughtsTokenCount\":2}}\n\n"
+    },
+    "rateLimit": {
+      "status": 500,
+      "body": "{\"error\":{\"status\":\"RESOURCE_EXHAUSTED\",\"message\":\"synthetic rate limit\"}}"
+    },
+    "format": {
+      "status": 200,
+      "body": "{\"choices\":[{\"message\":{\"content\":\"synthetic vertex response\"}}],\"responseContent\":{\"role\":\"model\",\"parts\":[{\"text\":\"synthetic vertex response\"}]}}"
+    },
+    "imageOutput": {
+      "status": 200,
+      "body": "{\"choices\":[{\"message\":{\"content\":\"synthetic vertex response\"}}],\"responseContent\":{\"role\":\"model\",\"parts\":[{\"text\":\"synthetic vertex response\"}]}}"
+    },
+    "missing": {
+      "status": 400,
+      "body": "{\"error\":true,\"message\":\"API key is required for Vertex AI Express mode\"}"
+    }
+  },
+  "failedSave": {
+    "cached": "FAILED_ONLY_IN_CACHE"
+  },
+  "toolHistory": [
+    {
+      "id": "call_14_0",
+      "error": true,
+      "result": "Error: 未找到条目 9999。"
+    },
+    {
+      "id": "call_14_1",
+      "error": false,
+      "result": "{\"uid\":0,\"title\":\"Capital\",\"keys\":[\"researchcity\"],\"content\":\"LOC_SOUTH\",\"revision\":\"fixture-id\"}"
+    }
+  ],
+  "streamEnd": "settled",
+  "mockStreamClosed": true
+}

@@ -1,0 +1,11 @@
+{
+  "check": "T11",
+  "listed": [
+    "change_fiction",
+    "read_fiction"
+  ],
+  "invalidMarkedError": true,
+  "permissionDeniedBeforeDispatch": true,
+  "effects": 1,
+  "result": "south"
+}

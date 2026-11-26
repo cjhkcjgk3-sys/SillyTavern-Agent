@@ -1,0 +1,79 @@
+
+> novel-auto-generator@1.15.17 test
+> vitest run
+
+
+ RUN  v3.2.4 /workspace/scratch/novel
+
+ ✓ tests/novel/roleImageLibrary.test.js (40 tests) 139ms
+ ✓ tests/host/sillyTavern.test.js (29 tests) 365ms
+ ✓ tests/infra/memoryHistoryDB.test.js (39 tests) 126ms
+ ✓ tests/novel/roleBatch.test.js (29 tests) 59ms
+ ✓ tests/host/resultIsolation.test.js (17 tests) 257ms
+ ✓ tests/host/rerollPreview.test.js (16 tests) 247ms
+ ✓ tests/services/worldbookService.test.js (21 tests) 37ms
+stdout | tests/services/apiService.retry.test.js > real API and chapter retry integration > rejects JSON output explicitly truncated by the model without retrying transport
+[10:27:38.221][ERROR][APICaller] [自定义API] Token limit exceeded: 模型输出被截断
+
+stdout | tests/services/apiService.retry.test.js > real API and chapter retry integration > caps nested transport/processing retry at four physical calls
+[10:27:44.527][ERROR][APICaller] [自定义API] API请求失败: 503  - unavailable
+
+stdout | tests/services/apiService.retry.test.js > real API and chapter retry integration > does not retry authorization failures at either layer
+[10:27:38.254][ERROR][APICaller] [自定义API] API请求失败: 401  - network error
+
+ ✓ tests/services/apiService.retry.test.js (11 tests) 84ms
+ ✓ tests/novel/roleBatchRecovery.test.js (8 tests) 41ms
+ ✓ tests/host/rerollCommit.test.js (15 tests) 3062ms
+   ✓ detects a save failure swallowed by the host and keeps the old page in memory and on disk  3032ms
+ ✓ tests/storage/chunkCommit.test.js (8 tests) 264ms
+ ✓ tests/novel/generation.test.js (11 tests) 88ms
+ ✓ tests/infra/apiCaller.stream.test.js (16 tests) 98ms
+ ✓ tests/services/apiService.url.test.js (22 tests) 18ms
+ ✓ tests/host/rerollSafety.test.js (7 tests) 331ms
+stdout | tests/services/providers.test.js > rejects truncated test responses instead of reporting success
+[10:27:41.173][ERROR][APICaller] [自定义API] Token limit exceeded: 模型输出被截断
+
+ ✓ tests/services/providers.test.js (8 tests) 30ms
+ ✓ tests/core/utils.test.js (21 tests) 45ms
+ ✓ tests/host/rerollRecovery.test.js (3 tests) 92ms
+ ✓ tests/novel/roleComparison.test.js (8 tests) 35ms
+ ✓ tests/services/mergeWorkflowService.test.js (4 tests) 33ms
+ ✓ tests/host/bufferedStream.test.js (5 tests) 599ms
+   ✓ keeps checking after a gap in model output and delivers subsequent bytes  522ms
+ ✓ tests/services/parserService.test.js (12 tests) 11ms
+ ✓ tests/core/errors.test.js (25 tests) 8ms
+ ✓ tests/core/diff.test.js (13 tests) 8ms
+ ✓ tests/novel/rerollRole.test.js (5 tests) 65ms
+ ✓ tests/services/processingService.test.js (26 tests) 10262ms
+   ✓ processMemoryChunkIndependent > 失败后自动重试至 maxRetries  3007ms
+   ✓ processMemoryChunkIndependent > 达到最大重试次数后抛出错误  7008ms
+ ✓ tests/novel/roleName.test.js (8 tests) 271ms
+ ✓ tests/novel/editRoleTemplate.test.js (5 tests) 71ms
+ ✓ tests/novel/tagFilters.test.js (6 tests) 24ms
+ ✓ tests/infra/apiCaller.retry.test.js (18 tests) 73ms
+ ✓ tests/novel/manualRoleStatus.test.js (4 tests) 22ms
+ ✓ tests/services/repairService.test.js (3 tests) 11ms
+ ✓ tests/novel/roleWorldbook.test.js (5 tests) 9ms
+ ✓ tests/services/rerollService.test.js (3 tests) 41ms
+ ✓ tests/host/roleSelection.test.js (4 tests) 30ms
+ ✓ tests/services/formats.test.js (4 tests) 27ms
+ ✓ tests/core/i18n.test.js (14 tests) 7ms
+ ✓ tests/storage/taskSchema.test.js (9 tests) 27ms
+ ✓ tests/host/rerollHostFlow.test.js (23 tests) 651ms
+   ✓ retries when ST silently skips the commit save (chat save busy)  502ms
+ ✓ tests/app/publicApi.test.js (3 tests) 26ms
+ ✓ tests/core/runContext.test.js (4 tests) 11ms
+ ✓ tests/host/streamServer.test.js (2 tests) 26ms
+ ✓ tests/services/importWorldbook.test.js (5 tests) 17ms
+ ✓ tests/services/edit.test.js (3 tests) 16ms
+ ✓ tests/core/logger.test.js (2 tests) 19ms
+ ✓ tests/core/chunkIdentity.test.js (2 tests) 3ms
+ ✓ tests/host/streamCompletion.test.js (2 tests) 6ms
+ ✓ tests/ui/modalController.test.js (1 test) 4ms
+ ✓ tests/services/splitText.test.js (2 tests) 30ms
+ ✓ tests/services/consolidate.test.js (1 test) 6ms
+
+ Test Files  50 passed (50)
+      Tests  552 passed (552)
+   Start at  10:27:33
+   Duration  16.90s (transform 1.62s, setup 0ms, collect 5.68s, tests 17.83s, environment 13ms, prepare 8.31s)

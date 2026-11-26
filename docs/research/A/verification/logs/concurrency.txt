@@ -1,0 +1,20 @@
+{
+  "check": "T18",
+  "firstSaved": [
+    "east",
+    "coast"
+  ],
+  "diskAfterStaleSave": [
+    "north",
+    "bay"
+  ],
+  "firstContextCacheAfterStaleSave": [
+    "east",
+    "coast"
+  ],
+  "workbenchRejectedStaleRevision": true,
+  "diskAfterRejection": [
+    "human south",
+    "bay"
+  ]
+}

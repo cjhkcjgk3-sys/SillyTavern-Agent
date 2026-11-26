@@ -1,0 +1,53 @@
+{
+  "check": "T17",
+  "results": [
+    {
+      "width": 320,
+      "height": 568,
+      "headerInitiallyVisible": false,
+      "approvalInitiallyVisibleAfterOpeningRecord": false,
+      "horizontalOverflow": false,
+      "total": 1200,
+      "returned": 30,
+      "rare": 1199,
+      "hasDraft": true,
+      "milliseconds": 28
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "headerInitiallyVisible": true,
+      "approvalInitiallyVisibleAfterOpeningRecord": false,
+      "horizontalOverflow": false,
+      "total": 1200,
+      "returned": 30,
+      "rare": 1199,
+      "hasDraft": true,
+      "milliseconds": 30
+    },
+    {
+      "width": 740,
+      "height": 360,
+      "headerInitiallyVisible": false,
+      "approvalInitiallyVisibleAfterOpeningRecord": false,
+      "horizontalOverflow": false,
+      "total": 1200,
+      "returned": 30,
+      "rare": 1199,
+      "hasDraft": true,
+      "milliseconds": 29
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "headerInitiallyVisible": true,
+      "approvalInitiallyVisibleAfterOpeningRecord": true,
+      "horizontalOverflow": false,
+      "total": 1200,
+      "returned": 30,
+      "rare": 1199,
+      "hasDraft": true,
+      "milliseconds": 32
+    }
+  ]
+}

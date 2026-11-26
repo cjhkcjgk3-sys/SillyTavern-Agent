@@ -1,0 +1,690 @@
+
+> test:e2e
+> playwright test --reporter=line
+
+
+Running 557 tests using 4 workers
+
+(node:1523) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:1524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:1522) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:1532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:1524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:1523) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/557] frontend/AddSwipeNoReload.e2e.js:5:3 › /addswipe without chat reload › adds swipes in place without reloading the chat
+(node:1522) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[2/557] frontend/MacroEngine.e2e.js:13:5 › MacroEngine › Basic evaluation › should evaluate a simple macro without arguments
+(node:1532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/557] frontend/MacroEngine.e2e.js:6:5 › MacroEngine › Basic evaluation › should return input unchanged when there are no macros
+[4/557] frontend/DeleteToolCalls.e2e.js:5:3 › deleting assistant messages with tool calls › deletes preceding tool calls unless explicitly disabled
+[5/557] frontend/MacroEngine.e2e.js:20:5 › MacroEngine › Basic evaluation › should evaluate multiple macros in order
+[6/557] frontend/MacroEngine.e2e.js:29:5 › MacroEngine › Unnamed arguments › should handle normal double-colon separated unnamed argument
+[7/557] frontend/MacroEngine.e2e.js:36:5 › MacroEngine › Unnamed arguments › should handle (legacy) colon separated unnamed argument
+[8/557] frontend/MacroEngine.e2e.js:43:5 › MacroEngine › Unnamed arguments › should handle (legacy) colon separated argument as only one, even with more separators (double colon)
+[9/557] frontend/MacroEngine.e2e.js:50:5 › MacroEngine › Unnamed arguments › should handle (legacy) colon separated argument as only one, even with more separators (single colon)
+[10/557] frontend/MacroEngine.e2e.js:57:5 › MacroEngine › Unnamed arguments › should handle (legacy) whitespace separated unnamed argument
+[11/557] frontend/MacroEngine.e2e.js:64:5 › MacroEngine › Unnamed arguments › should handle (legacy) whitespace separated unnamed argument as only one, even with more separators (space)
+[12/557] frontend/MacroEngine.e2e.js:71:5 › MacroEngine › Unnamed arguments › should support multi-line arguments for macros
+[13/557] frontend/MacroEngine.e2e.js:82:5 › MacroEngine › Nested macros › should resolve nested macros inside arguments inside-out
+[14/557] frontend/MacroEngine.e2e.js:91:5 › MacroEngine › Nested macros › should resolve nested macros across multiple arguments
+[15/557] frontend/MacroEngine.e2e.js:100:5 › MacroEngine › Unknown macros › should keep unknown macro syntax but resolve nested macros inside it
+[16/557] frontend/MacroEngine.e2e.js:107:5 › MacroEngine › Unknown macros › should keep surrounding text inside unknown macros intact
+[17/557] frontend/MacroEngine.e2e.js:116:5 › MacroEngine › Comment macro › should remove single-line comments with simple body
+[18/557] frontend/MacroEngine.e2e.js:123:5 › MacroEngine › Comment macro › should accept non-word characters immediately after //
+[19/557] frontend/MacroEngine.e2e.js:130:5 › MacroEngine › Comment macro › should ignore additional // sequences inside the comment body
+[20/557] frontend/MacroEngine.e2e.js:137:5 › MacroEngine › Comment macro › should support multi-line comment bodies
+[21/557] frontend/MacroEngine.e2e.js:145:7 › MacroEngine › Comment macro › Scoped comment macro › should remove scoped comment block (basic)
+[22/557] frontend/MacroEngine.e2e.js:152:7 › MacroEngine › Comment macro › Scoped comment macro › should remove scoped comment block spanning multiple lines
+[23/557] frontend/MacroEngine.e2e.js:159:7 › MacroEngine › Comment macro › Scoped comment macro › should remove scoped comment block with extra slashes in closing tag
+[24/557] frontend/MacroEngine.e2e.js:166:7 › MacroEngine › Comment macro › Scoped comment macro › should remove scoped comment block with macros inside (macros not evaluated)
+[25/557] frontend/MacroEngine.e2e.js:173:7 › MacroEngine › Comment macro › Scoped comment macro › should not treat bare {{//}} without matching closer as scoped
+[26/557] frontend/MacroEngine.e2e.js:180:7 › MacroEngine › Comment macro › Scoped comment macro › should handle scoped comment adjacent to other text and macros
+[27/557] frontend/MacroEngine.e2e.js:190:5 › MacroEngine › Trim macro › should trim content inside scoped trim macro
+[28/557] frontend/MacroEngine.e2e.js:197:5 › MacroEngine › Trim macro › should trim leading whitespace in scoped trim
+[29/557] frontend/MacroEngine.e2e.js:204:5 › MacroEngine › Trim macro › should trim trailing whitespace in scoped trim
+[30/557] frontend/MacroEngine.e2e.js:211:5 › MacroEngine › Trim macro › should handle scoped trim with macros inside
+[31/557] frontend/MacroEngine.e2e.js:218:5 › MacroEngine › Trim macro › should handle nested scoped trim
+[32/557] frontend/MacroEngine.e2e.js:227:5 › MacroEngine › Legacy compatibility › should strip trim macro and surrounding newlines (legacy behavior)
+[33/557] frontend/MacroEngine.e2e.js:234:5 › MacroEngine › Legacy compatibility › should handle multiple trim macros in a single string
+[34/557] frontend/MacroEngine.e2e.js:241:5 › MacroEngine › Legacy compatibility › should support legacy time macro with positive offset via pre-processing
+[35/557] frontend/MacroEngine.e2e.js:253:5 › MacroEngine › Legacy compatibility › should support legacy time macro with negative offset via pre-processing
+[36/557] frontend/MacroEngine.e2e.js:262:5 › MacroEngine › Legacy compatibility › should support legacy <USER> marker via pre-processing
+[37/557] frontend/MacroEngine.e2e.js:271:5 › MacroEngine › Legacy compatibility › should support legacy <BOT> and <CHAR> markers via pre-processing
+[38/557] frontend/MacroEngine.e2e.js:280:5 › MacroEngine › Legacy compatibility › should support legacy <GROUP> and <CHARIFNOTGROUP> markers via pre-processing (non-group fallback)
+[39/557] frontend/MacroEngine.e2e.js:291:5 › MacroEngine › Bracket handling around macros › should allow single opening brace inside macro arguments
+[40/557] frontend/MacroEngine.e2e.js:308:5 › MacroEngine › Bracket handling around macros › should allow single closing brace inside macro arguments
+[41/557] frontend/MacroEngine.e2e.js:323:5 › MacroEngine › Bracket handling around macros › should treat unterminated macro with identifier at end of input as plain text
+[42/557] frontend/MacroEngine.e2e.js:336:5 › MacroEngine › Bracket handling around macros › should treat invalid macro start as plain text when followed by non-identifier characters
+[43/557] frontend/MacroEngine.e2e.js:349:5 › MacroEngine › Bracket handling around macros › should treat unterminated macro in the middle of the string as plain text
+[44/557] frontend/MacroEngine.e2e.js:362:5 › MacroEngine › Bracket handling around macros › should treat dangling macro start as text and still evaluate subsequent macro
+[45/557] frontend/MacroEngine.e2e.js:377:5 › MacroEngine › Bracket handling around macros › should ignore invalid macro start but still evaluate following valid macro
+[46/557] frontend/MacroEngine.e2e.js:392:5 › MacroEngine › Bracket handling around macros › should allow single opening brace immediately before a macro
+[47/557] frontend/MacroEngine.e2e.js:407:5 › MacroEngine › Bracket handling around macros › should allow single closing brace immediately after a macro
+[48/557] frontend/MacroEngine.e2e.js:420:5 › MacroEngine › Bracket handling around macros › should allow single braces around a macro
+[49/557] frontend/MacroEngine.e2e.js:433:5 › MacroEngine › Bracket handling around macros › should allow double opening braces immediately before a macro
+[50/557] frontend/MacroEngine.e2e.js:446:5 › MacroEngine › Bracket handling around macros › should allow double closing braces immediately after a macro
+[51/557] frontend/MacroEngine.e2e.js:459:5 › MacroEngine › Bracket handling around macros › should allow double braces around a macro
+[52/557] frontend/MacroEngine.e2e.js:472:5 › MacroEngine › Bracket handling around macros › should resolve nested macro inside argument with surrounding braces
+[53/557] frontend/MacroEngine.e2e.js:487:5 › MacroEngine › Bracket handling around macros › should handle adjacent macros with no separator
+[54/557] frontend/MacroEngine.e2e.js:500:5 › MacroEngine › Bracket handling around macros › should handle macros separated only by surrounding braces
+[55/557] frontend/MacroEngine.e2e.js:513:5 › MacroEngine › Bracket handling around macros › should handle Windows newlines with braces near macros
+[56/557] frontend/MacroEngine.e2e.js:526:5 › MacroEngine › Bracket handling around macros › should treat stray closing braces outside macros as plain text
+[57/557] frontend/MacroEngine.e2e.js:539:5 › MacroEngine › Bracket handling around macros › should keep stray closing braces and still evaluate following macro
+[58/557] frontend/MacroEngine.e2e.js:552:5 › MacroEngine › Bracket handling around macros › should handle stray closing braces before macros as plain text
+[59/557] frontend/MacroEngine.e2e.js:567:5 › MacroEngine › Arity errors › should not resolve macro without arguments when called with arguments
+[60/557] frontend/MacroEngine.e2e.js:586:5 › MacroEngine › Arity errors › should not resolve reverse when called without arguments
+[61/557] frontend/MacroEngine.e2e.js:601:5 › MacroEngine › Arity errors › should not resolve reverse when called with too many arguments
+[62/557] frontend/MacroEngine.e2e.js:620:5 › MacroEngine › Arity errors › should not resolve list-bounded macro when called outside list bounds
+[63/557] frontend/MacroEngine.e2e.js:666:5 › MacroEngine › Arity errors › should resolve nested macros in arguments, even though the outer macro has wrong number of arguments
+[64/557] frontend/MacroEngine.e2e.js:676:5 › MacroEngine › Type validation › should not resolve strict typed macro when argument type is invalid
+[65/557] frontend/MacroEngine.e2e.js:714:5 › MacroEngine › Type validation › should resolve non-strict typed macro when argument type is invalid but still log warning
+[66/557] frontend/MacroEngine.e2e.js:754:5 › MacroEngine › Environment › should expose original content as env.content to macro handlers
+[67/557] frontend/MacroEngine.e2e.js:863:5 › MacroEngine › Deterministic pick macro › should return stable results for the same chat and content
+[68/557] frontend/MacroEngine.e2e.js:883:5 › MacroEngine › Deterministic pick macro › should use different seeds for identical picks at different positions
+[69/557] frontend/MacroEngine.e2e.js:920:5 › MacroEngine › Deterministic pick macro › should use different seeds for identical picks inside different scoped macros at the same offset
+[70/557] frontend/MacroEngine.e2e.js:954:5 › MacroEngine › Deterministic pick macro › should use different seeds for identical picks in inline arguments
+[71/557] frontend/MacroEngine.e2e.js:984:5 › MacroEngine › Deterministic pick macro › should maintain stability across evaluations for picks in scoped content
+[72/557] frontend/MacroEngine.e2e.js:1014:5 › MacroEngine › Deterministic pick macro › should use different seeds for identical picks inside different if blocks (delayArgResolution)
+[73/557] frontend/MacroEngine.e2e.js:1049:5 › MacroEngine › Deterministic pick macro › should maintain stability for picks inside if blocks across evaluations
+[74/557] frontend/MacroEngine.e2e.js:1082:7 › MacroEngine › Dynamic macros › String value dynamic macros › should resolve dynamic macro with string value
+[75/557] frontend/MacroEngine.e2e.js:1105:7 › MacroEngine › Dynamic macros › String value dynamic macros › should resolve dynamic macro with numeric value converted to string
+[76/557] frontend/MacroEngine.e2e.js:1128:7 › MacroEngine › Dynamic macros › String value dynamic macros › should not resolve string dynamic macro when called with arguments
+[77/557] frontend/MacroEngine.e2e.js:1159:7 › MacroEngine › Dynamic macros › Handler function dynamic macros › should resolve dynamic macro with handler function
+[78/557] frontend/MacroEngine.e2e.js:1182:7 › MacroEngine › Dynamic macros › Handler function dynamic macros › should pass execution context to handler function
+[79/557] frontend/MacroEngine.e2e.js:1205:7 › MacroEngine › Dynamic macros › Handler function dynamic macros › should not resolve handler dynamic macro when called with arguments due to strict arity
+[80/557] frontend/MacroEngine.e2e.js:1236:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should resolve dynamic macro with MacroDefinitionOptions
+[81/557] frontend/MacroEngine.e2e.js:1262:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should support unnamed arguments in dynamic macro with options
+[82/557] frontend/MacroEngine.e2e.js:1292:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should support multiple unnamed arguments in dynamic macro
+[83/557] frontend/MacroEngine.e2e.js:1326:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should support optional arguments in dynamic macro
+[84/557] frontend/MacroEngine.e2e.js:1366:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should support list arguments in dynamic macro
+[85/557] frontend/MacroEngine.e2e.js:1398:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should enforce type validation in dynamic macro with options
+[86/557] frontend/MacroEngine.e2e.js:1436:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should respect strictArgs: false in dynamic macro with options
+[87/557] frontend/MacroEngine.e2e.js:1473:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should fail arity check in dynamic macro with options when too few args
+[88/557] frontend/MacroEngine.e2e.js:1509:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should fail arity check in dynamic macro with options when too many args
+[89/557] frontend/MacroEngine.e2e.js:1545:7 › MacroEngine › Dynamic macros › MacroDefinitionOptions dynamic macros › should handle invalid MacroDefinitionOptions gracefully
+[90/557] frontend/MacroEngine.e2e.js:1583:7 › MacroEngine › Dynamic macros › Dynamic macro priority and case sensitivity › should override registered macro with dynamic macro of same name
+[91/557] frontend/MacroEngine.e2e.js:1607:7 › MacroEngine › Dynamic macros › Dynamic macro priority and case sensitivity › should match dynamic macro names case-insensitively
+[92/557] frontend/MacroEngine.e2e.js:1639:7 › MacroEngine › Dynamic macros › Dynamic macro priority and case sensitivity › should resolve multiple different dynamic macros in same evaluation
+[93/557] frontend/MacroEngine.e2e.js:1669:5 › MacroEngine › Macro flags › should resolve macro with legacy hash flag (no effect)
+[94/557] frontend/MacroEngine.e2e.js:1677:5 › MacroEngine › Macro flags › should keep unmatched closing block macro as raw text
+[95/557] frontend/MacroEngine.e2e.js:1685:5 › MacroEngine › Macro flags › should keep unmatched closing block macro for existing macro as raw text
+[96/557] frontend/MacroEngine.e2e.js:1693:5 › MacroEngine › Macro flags › should keep unmatched closing block macro with arguments as raw text
+[97/557] frontend/MacroEngine.e2e.js:1701:5 › MacroEngine › Macro flags › should keep closing macro raw when surrounded by other content
+[98/557] frontend/MacroEngine.e2e.js:1709:5 › MacroEngine › Macro flags › should resolve scoped macro while keeping unrelated closing raw
+[99/557] frontend/MacroEngine.e2e.js:1717:5 › MacroEngine › Macro flags › should pass flags to macro handler
+[100/557] frontend/MacroEngine.e2e.js:1752:5 › MacroEngine › Macro flags › should correctly identify individual flags in handler
+[101/557] frontend/MacroEngine.e2e.js:1796:5 › MacroEngine › Macro flags › should handle flags with arguments correctly
+[102/557] frontend/MacroEngine.e2e.js:1804:5 › MacroEngine › Macro flags › should handle multiple flags with whitespace
+[103/557] frontend/MacroEngine.e2e.js:1837:5 › MacroEngine › Scoped macros › should merge scoped content as last unnamed argument
+[104/557] frontend/MacroEngine.e2e.js:1844:5 › MacroEngine › Scoped macros › should be equivalent to inline argument syntax
+[105/557] frontend/MacroEngine.e2e.js:1853:5 › MacroEngine › Scoped macros › should resolve nested macros inside scoped content
+[106/557] frontend/MacroEngine.e2e.js:1860:5 › MacroEngine › Scoped macros › should handle nested scoped macros with same name
+[107/557] frontend/MacroEngine.e2e.js:1869:5 › MacroEngine › Scoped macros › should handle multiple independent scoped macros
+[108/557] frontend/MacroEngine.e2e.js:1876:5 › MacroEngine › Scoped macros › should keep unmatched closing tag as raw text
+[109/557] frontend/MacroEngine.e2e.js:1883:5 › MacroEngine › Scoped macros › should keep second closing tag as raw when already closed
+[110/557] frontend/MacroEngine.e2e.js:1890:5 › MacroEngine › Scoped macros › should work with empty scoped content
+[111/557] frontend/MacroEngine.e2e.js:1897:5 › MacroEngine › Scoped macros › should work with multi-line scoped content
+[112/557] frontend/MacroEngine.e2e.js:1904:5 › MacroEngine › Scoped macros › should preserve plaintext around scoped macros
+[113/557] frontend/MacroEngine.e2e.js:1911:5 › MacroEngine › Scoped macros › should handle deeply nested scoped macros
+[114/557] frontend/MacroEngine.e2e.js:1920:5 › MacroEngine › Scoped macros › should handle scoped macro with existing arguments
+[115/557] frontend/MacroEngine.e2e.js:1928:5 › MacroEngine › Scoped macros › should not match closing tag for different macro name
+[116/557] frontend/MacroEngine.e2e.js:1938:5 › MacroEngine › Scoped macros › should handle scoped content with special characters
+[117/557] frontend/MacroEngine.e2e.js:1945:5 › MacroEngine › Scoped macros › should set isScoped to true for scoped macro invocation
+[118/557] frontend/MacroEngine.e2e.js:1981:5 › MacroEngine › Scoped macros › should set isScoped to false for inline argument syntax
+[119/557] frontend/MacroEngine.e2e.js:2017:5 › MacroEngine › Scoped macros › should keep scoped macro raw when macro accepts no arguments
+[120/557] frontend/MacroEngine.e2e.js:2026:5 › MacroEngine › Scoped macros › should keep scoped macro raw when argument count exceeds maximum
+[121/557] frontend/MacroEngine.e2e.js:2035:5 › MacroEngine › Scoped macros › should keep scoped macro raw when argument count is below minimum
+[122/557] frontend/MacroEngine.e2e.js:2082:5 › MacroEngine › Scoped macros › should evaluate inner macros before outer macro in scoped content
+[123/557] frontend/MacroEngine.e2e.js:2137:5 › MacroEngine › Scoped macros › should handle scoped macro inside another scoped macro content
+[124/557] frontend/MacroEngine.e2e.js:2146:5 › MacroEngine › Scoped macros › should auto-trim whitespace-only scoped content to empty
+[125/557] frontend/MacroEngine.e2e.js:2153:5 › MacroEngine › Scoped macros › should preserve whitespace-only scoped content with # flag
+[126/557] frontend/MacroEngine.e2e.js:2160:5 › MacroEngine › Scoped macros › should handle scoped macro at start of input
+[127/557] frontend/MacroEngine.e2e.js:2167:5 › MacroEngine › Scoped macros › should handle scoped macro at end of input
+[128/557] frontend/MacroEngine.e2e.js:2174:5 › MacroEngine › Scoped macros › should handle consecutive scoped macros
+[129/557] frontend/MacroEngine.e2e.js:2181:5 › MacroEngine › Scoped macros › should handle scoped macro with only macro content (no plaintext)
+[130/557] frontend/MacroEngine.e2e.js:2188:5 › MacroEngine › Scoped macros › should not match closing tag across different macro instances
+[131/557] frontend/MacroEngine.e2e.js:2197:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should resolve scoped macro inside another macro argument
+[132/557] frontend/MacroEngine.e2e.js:2205:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should resolve scoped if macro inside setvar argument
+[133/557] frontend/MacroEngine.e2e.js:2213:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should resolve scoped if/else macro inside setvar argument
+[134/557] frontend/MacroEngine.e2e.js:2220:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should resolve multiple scoped macros inside single argument
+[135/557] frontend/MacroEngine.e2e.js:2228:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should resolve deeply nested scoped macros in arguments
+[136/557] frontend/MacroEngine.e2e.js:2236:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should resolve scoped macro with text before and after in argument
+[137/557] frontend/MacroEngine.e2e.js:2243:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should handle scoped macro inside first argument when macro has multiple args
+[138/557] frontend/MacroEngine.e2e.js:2251:7 › MacroEngine › Scoped macros › scoped macros nested inside arguments › should handle multiline scoped content inside argument
+[139/557] frontend/MacroEngine.e2e.js:2262:7 › MacroEngine › {{if}} conditional macro › with literal values › should return content when condition is truthy string
+[140/557] frontend/MacroEngine.e2e.js:2269:7 › MacroEngine › {{if}} conditional macro › with literal values › should return empty when condition is empty string
+[141/557] frontend/MacroEngine.e2e.js:2276:7 › MacroEngine › {{if}} conditional macro › with literal values › should return empty when condition is "false"
+[142/557] frontend/MacroEngine.e2e.js:2283:7 › MacroEngine › {{if}} conditional macro › with literal values › should return empty when condition is "off"
+[143/557] frontend/MacroEngine.e2e.js:2290:7 › MacroEngine › {{if}} conditional macro › with literal values › should return empty when condition is "0"
+[144/557] frontend/MacroEngine.e2e.js:2297:7 › MacroEngine › {{if}} conditional macro › with literal values › should return content when condition is "true"
+[145/557] frontend/MacroEngine.e2e.js:2304:7 › MacroEngine › {{if}} conditional macro › with literal values › should return content when condition is "1"
+[146/557] frontend/MacroEngine.e2e.js:2313:7 › MacroEngine › {{if}} conditional macro › with macro name resolution › should resolve macro name and return content when macro returns truthy
+[147/557] frontend/MacroEngine.e2e.js:2321:7 › MacroEngine › {{if}} conditional macro › with macro name resolution › should resolve macro name and return empty when macro returns empty
+[148/557] frontend/MacroEngine.e2e.js:2329:7 › MacroEngine › {{if}} conditional macro › with macro name resolution › should not resolve non-existent macro names (treat as literal)
+[149/557] frontend/MacroEngine.e2e.js:2337:7 › MacroEngine › {{if}} conditional macro › with macro name resolution › should resolve user macro and show content
+[150/557] frontend/MacroEngine.e2e.js:2347:7 › MacroEngine › {{if}} conditional macro › with nested macros in condition › should evaluate nested macro in condition (truthy)
+[151/557] frontend/MacroEngine.e2e.js:2354:7 › MacroEngine › {{if}} conditional macro › with nested macros in condition › should evaluate nested macro in condition (falsy)
+[152/557] frontend/MacroEngine.e2e.js:2361:7 › MacroEngine › {{if}} conditional macro › with nested macros in condition › should evaluate nested macro in condition (false string)
+[153/557] frontend/MacroEngine.e2e.js:2370:7 › MacroEngine › {{if}} conditional macro › scoped usage › should work with scoped content (truthy)
+[154/557] frontend/MacroEngine.e2e.js:2377:7 › MacroEngine › {{if}} conditional macro › scoped usage › should work with scoped content (falsy)
+[155/557] frontend/MacroEngine.e2e.js:2384:7 › MacroEngine › {{if}} conditional macro › scoped usage › should handle macros inside scoped content
+[156/557] frontend/MacroEngine.e2e.js:2391:7 › MacroEngine › {{if}} conditional macro › scoped usage › should handle nested if macros
+[157/557] frontend/MacroEngine.e2e.js:2398:7 › MacroEngine › {{if}} conditional macro › scoped usage › should handle nested if with outer false
+[158/557] frontend/MacroEngine.e2e.js:2405:7 › MacroEngine › {{if}} conditional macro › scoped usage › should handle nested if with inner false
+[159/557] frontend/MacroEngine.e2e.js:2414:7 › MacroEngine › {{if}} conditional macro › with space-separated condition › should work with space-separated condition (truthy)
+[160/557] frontend/MacroEngine.e2e.js:2421:7 › MacroEngine › {{if}} conditional macro › with space-separated condition › should resolve macro name with space-separated syntax
+[161/557] frontend/MacroEngine.e2e.js:2430:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should return then-branch when condition is truthy
+[162/557] frontend/MacroEngine.e2e.js:2437:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should return else-branch when condition is falsy
+[163/557] frontend/MacroEngine.e2e.js:2444:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should return else-branch when condition is "false"
+[164/557] frontend/MacroEngine.e2e.js:2451:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should handle macros in both branches
+[165/557] frontend/MacroEngine.e2e.js:2458:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should handle macros in else branch when falsy
+[166/557] frontend/MacroEngine.e2e.js:2465:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should handle nested if-else in then-branch
+[167/557] frontend/MacroEngine.e2e.js:2472:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should handle nested if-else in else-branch
+[168/557] frontend/MacroEngine.e2e.js:2479:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should handle deeply nested if-else
+[169/557] frontend/MacroEngine.e2e.js:2486:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should return empty else-branch if not provided
+[170/557] frontend/MacroEngine.e2e.js:2500:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should trim newlines from branches
+[171/557] frontend/MacroEngine.e2e.js:2493:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should trim whitespace from branches
+[172/557] frontend/MacroEngine.e2e.js:2507:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should trim else branch when selected
+[173/557] frontend/MacroEngine.e2e.js:2514:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should resolve macro name in condition with else branch
+[174/557] frontend/MacroEngine.e2e.js:2521:7 › MacroEngine › {{if}} conditional macro › with {{else}} branch › should handle empty macro returning else branch
+[175/557] frontend/MacroEngine.e2e.js:2530:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should invert truthy condition to falsy
+[176/557] frontend/MacroEngine.e2e.js:2537:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should invert falsy condition to truthy
+[177/557] frontend/MacroEngine.e2e.js:2544:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should invert empty string to truthy
+[178/557] frontend/MacroEngine.e2e.js:2552:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should work with ! prefix and macro name
+[179/557] frontend/MacroEngine.e2e.js:2560:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should work with ! prefix and truthy macro
+[180/557] frontend/MacroEngine.e2e.js:2568:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should work with ! prefix and nested macro
+[181/557] frontend/MacroEngine.e2e.js:2576:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should NOT invert when ! comes from resolved value
+[182/557] frontend/MacroEngine.e2e.js:2585:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should work with else branch on inverted condition
+[183/557] frontend/MacroEngine.e2e.js:2592:7 › MacroEngine › {{if}} conditional macro › with inverted condition (!) › should work with separator syntax
+[184/557] frontend/MacroEngine.e2e.js:2602:5 › MacroEngine › scoped content auto-trim › should auto-trim scoped content by default
+[185/557] frontend/MacroEngine.e2e.js:2609:5 › MacroEngine › scoped content auto-trim › should auto-trim leading newlines in scoped content
+[186/557] frontend/MacroEngine.e2e.js:2616:5 › MacroEngine › scoped content auto-trim › should auto-trim trailing newlines in scoped content
+[187/557] frontend/MacroEngine.e2e.js:2623:5 › MacroEngine › scoped content auto-trim › should dedent consistent indentation when auto-trimming
+[188/557] frontend/MacroEngine.e2e.js:2631:5 › MacroEngine › scoped content auto-trim › should preserve whitespace with # flag
+[189/557] frontend/MacroEngine.e2e.js:2638:5 › MacroEngine › scoped content auto-trim › should preserve leading newlines with # flag
+[190/557] frontend/MacroEngine.e2e.js:2645:5 › MacroEngine › scoped content auto-trim › should preserve trailing newlines with # flag
+[191/557] frontend/MacroEngine.e2e.js:2652:5 › MacroEngine › scoped content auto-trim › should work with # flag and nested macros
+[192/557] frontend/MacroEngine.e2e.js:2659:5 › MacroEngine › scoped content auto-trim › should auto-trim with nested macros by default
+[193/557] frontend/MacroEngine.e2e.js:2666:5 › MacroEngine › scoped content auto-trim › should auto-trim {{if}} scoped content
+[194/557] frontend/MacroEngine.e2e.js:2673:5 › MacroEngine › scoped content auto-trim › should preserve {{if}} whitespace with # flag
+[195/557] frontend/MacroEngine.e2e.js:2681:5 › MacroEngine › scoped content auto-trim › should auto-trim {{reverse}} scoped content
+[196/557] frontend/MacroEngine.e2e.js:2688:5 › MacroEngine › scoped content auto-trim › should preserve {{reverse}} whitespace with # flag
+[197/557] frontend/MacroEngine.e2e.js:2695:5 › MacroEngine › scoped content auto-trim › should dedent consistent indentation from multiline content
+[198/557] frontend/MacroEngine.e2e.js:2702:5 › MacroEngine › scoped content auto-trim › should dedent based on first non-empty line indentation
+[199/557] frontend/MacroEngine.e2e.js:2709:5 › MacroEngine › scoped content auto-trim › should preserve relative indentation when dedenting
+[200/557] frontend/MacroEngine.e2e.js:2716:5 › MacroEngine › scoped content auto-trim › should handle mixed indentation levels correctly
+[201/557] frontend/MacroEngine.e2e.js:2723:5 › MacroEngine › scoped content auto-trim › should dedent {{if}} branches with indentation
+[202/557] frontend/MacroEngine.e2e.js:2730:5 › MacroEngine › scoped content auto-trim › should dedent {{if}} else branch with indentation
+[203/557] frontend/MacroEngine.e2e.js:2737:5 › MacroEngine › scoped content auto-trim › should not dedent when # flag is set
+[204/557] frontend/MacroEngine.e2e.js:2744:5 › MacroEngine › scoped content auto-trim › should handle single line content without dedent issues
+[205/557] frontend/MacroEngine.e2e.js:2751:5 › MacroEngine › scoped content auto-trim › should handle empty lines in multiline content
+[206/557] frontend/MacroEngine.e2e.js:2758:5 › MacroEngine › scoped content auto-trim › should dedent based on first non-empty line and preserve relative indentation
+[207/557] frontend/MacroEngine.e2e.js:2769:5 › MacroEngine › Pre/Post Processor Registration › should run custom pre-processor before macro evaluation
+[208/557] frontend/MacroEngine.e2e.js:2801:5 › MacroEngine › Pre/Post Processor Registration › should run custom post-processor after macro evaluation
+[209/557] frontend/MacroEngine.e2e.js:2833:5 › MacroEngine › Pre/Post Processor Registration › should execute pre-processors in priority order (lower first)
+[210/557] frontend/MacroEngine.e2e.js:2873:5 › MacroEngine › Pre/Post Processor Registration › should execute post-processors in priority order (lower first)
+[211/557] frontend/MacroEngine.e2e.js:2913:5 › MacroEngine › Pre/Post Processor Registration › should successfully remove a registered pre-processor
+[212/557] frontend/MacroEngine.e2e.js:2946:5 › MacroEngine › Pre/Post Processor Registration › should return false when removing non-existent processor
+[213/557] frontend/MacroEngine.e2e.js:2959:5 › MacroEngine › Pre/Post Processor Registration › should pass env to pre-processor handlers
+[214/557] frontend/MacroEngine.e2e.js:2992:5 › MacroEngine › Pre/Post Processor Registration › should pass env to post-processor handlers
+[215/557] frontend/MacroEngine.e2e.js:3028:5 › MacroEngine › Variable Shorthand Syntax › should get local variable with . shorthand
+[216/557] frontend/MacroEngine.e2e.js:3040:5 › MacroEngine › Variable Shorthand Syntax › should get global variable with $ shorthand
+[217/557] frontend/MacroEngine.e2e.js:3052:5 › MacroEngine › Variable Shorthand Syntax › should set local variable with = shorthand
+[218/557] frontend/MacroEngine.e2e.js:3063:5 › MacroEngine › Variable Shorthand Syntax › should increment local variable with ++ shorthand
+[219/557] frontend/MacroEngine.e2e.js:3075:5 › MacroEngine › Variable Shorthand Syntax › should decrement global variable with -- shorthand
+[220/557] frontend/MacroEngine.e2e.js:3087:5 › MacroEngine › Variable Shorthand Syntax › should add to local variable with += shorthand
+[221/557] frontend/MacroEngine.e2e.js:3100:5 › MacroEngine › Variable Shorthand Syntax › should support nested macro in variable value
+[222/557] frontend/MacroEngine.e2e.js:3111:5 › MacroEngine › Variable Shorthand Syntax › should handle whitespace in variable shorthand
+[223/557] frontend/MacroEngine.e2e.js:3122:5 › MacroEngine › Variable Shorthand Syntax › should handle variable name with hyphens
+[224/557] frontend/MacroEngine.e2e.js:3134:5 › MacroEngine › Variable Shorthand Syntax › should handle variable name with underscores
+[225/557] frontend/MacroEngine.e2e.js:3146:5 › MacroEngine › Variable Shorthand Syntax › should return empty string for non-existent variable
+[226/557] frontend/MacroEngine.e2e.js:3156:5 › MacroEngine › Variable Shorthand Syntax › should increment non-existent variable starting from 0
+[227/557] frontend/MacroEngine.e2e.js:3166:5 › MacroEngine › Variable Shorthand Syntax › should handle multiple variable operations in sequence
+[228/557] frontend/MacroEngine.e2e.js:3177:5 › MacroEngine › Variable Shorthand Syntax › should subtract from local variable with -= shorthand
+[229/557] frontend/MacroEngine.e2e.js:3190:5 › MacroEngine › Variable Shorthand Syntax › should subtract from global variable with -= shorthand
+[230/557] frontend/MacroEngine.e2e.js:3202:5 › MacroEngine › Variable Shorthand Syntax › should return default value with || when variable is falsy (empty)
+[231/557] frontend/MacroEngine.e2e.js:3212:5 › MacroEngine › Variable Shorthand Syntax › should return default value with || when variable is falsy (zero)
+[232/557] frontend/MacroEngine.e2e.js:3222:5 › MacroEngine › Variable Shorthand Syntax › should return variable value with || when truthy
+[233/557] frontend/MacroEngine.e2e.js:3232:5 › MacroEngine › Variable Shorthand Syntax › should return default value with || when variable does not exist
+[234/557] frontend/MacroEngine.e2e.js:3242:5 › MacroEngine › Variable Shorthand Syntax › should return default value with ?? when variable does not exist
+[235/557] frontend/MacroEngine.e2e.js:3250:5 › MacroEngine › Variable Shorthand Syntax › should return empty string with ?? when variable exists but is empty
+[236/557] frontend/MacroEngine.e2e.js:3260:5 › MacroEngine › Variable Shorthand Syntax › should return zero with ?? when variable exists and is zero
+[237/557] frontend/MacroEngine.e2e.js:3270:5 › MacroEngine › Variable Shorthand Syntax › should return variable value with ?? when it exists
+[238/557] frontend/MacroEngine.e2e.js:3282:5 › MacroEngine › Variable Shorthand Syntax › should set and return default with ||= when variable is falsy
+[239/557] frontend/MacroEngine.e2e.js:3293:5 › MacroEngine › Variable Shorthand Syntax › should not set and return current with ||= when variable is truthy
+[240/557] frontend/MacroEngine.e2e.js:3304:5 › MacroEngine › Variable Shorthand Syntax › should set and return default with ||= when variable does not exist
+[241/557] frontend/MacroEngine.e2e.js:3314:5 › MacroEngine › Variable Shorthand Syntax › should set and return default with ??= when variable does not exist
+[242/557] frontend/MacroEngine.e2e.js:3333:5 › MacroEngine › Variable Shorthand Syntax › should not set and return current with ??= when variable exists and is zero
+[243/557] frontend/MacroEngine.e2e.js:3322:5 › MacroEngine › Variable Shorthand Syntax › should not set and return current with ??= when variable exists but is empty
+[244/557] frontend/MacroEngine.e2e.js:3346:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable equals value with ==
+[245/557] frontend/MacroEngine.e2e.js:3356:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable does not equal value with ==
+[246/557] frontend/MacroEngine.e2e.js:3366:5 › MacroEngine › Variable Shorthand Syntax › should compare empty variable correctly with ==
+[247/557] frontend/MacroEngine.e2e.js:3376:5 › MacroEngine › Variable Shorthand Syntax › should compare numeric value correctly with ==
+[248/557] frontend/MacroEngine.e2e.js:3388:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable does not equal value with !=
+[249/557] frontend/MacroEngine.e2e.js:3398:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable equals value with !=
+[250/557] frontend/MacroEngine.e2e.js:3408:5 › MacroEngine › Variable Shorthand Syntax › should compare empty variable correctly with !=
+[251/557] frontend/MacroEngine.e2e.js:3418:5 › MacroEngine › Variable Shorthand Syntax › should compare non-empty to empty with !=
+[252/557] frontend/MacroEngine.e2e.js:3428:5 › MacroEngine › Variable Shorthand Syntax › should compare numeric value correctly with !=
+[253/557] frontend/MacroEngine.e2e.js:3440:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable is greater than value with >
+[254/557] frontend/MacroEngine.e2e.js:3450:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable is not greater than value with >
+[255/557] frontend/MacroEngine.e2e.js:3460:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable equals value with >
+[256/557] frontend/MacroEngine.e2e.js:3470:5 › MacroEngine › Variable Shorthand Syntax › should return false for non-numeric values with >
+[257/557] frontend/MacroEngine.e2e.js:3482:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable is greater than value with >=
+[258/557] frontend/MacroEngine.e2e.js:3492:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable equals value with >=
+[259/557] frontend/MacroEngine.e2e.js:3502:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable is less than value with >=
+[260/557] frontend/MacroEngine.e2e.js:3514:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable is less than value with <
+[261/557] frontend/MacroEngine.e2e.js:3524:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable is not less than value with <
+[262/557] frontend/MacroEngine.e2e.js:3534:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable equals value with <
+[263/557] frontend/MacroEngine.e2e.js:3544:5 › MacroEngine › Variable Shorthand Syntax › should return false for non-numeric values with <
+[264/557] frontend/MacroEngine.e2e.js:3556:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable is less than value with <=
+[265/557] frontend/MacroEngine.e2e.js:3566:5 › MacroEngine › Variable Shorthand Syntax › should return true when variable equals value with <=
+[266/557] frontend/MacroEngine.e2e.js:3576:5 › MacroEngine › Variable Shorthand Syntax › should return false when variable is greater than value with <=
+[267/557] frontend/MacroEngine.e2e.js:3588:5 › MacroEngine › Variable Shorthand Syntax › should handle negative numbers with > operator
+[268/557] frontend/MacroEngine.e2e.js:3598:5 › MacroEngine › Variable Shorthand Syntax › should handle negative numbers with < operator
+[269/557] frontend/MacroEngine.e2e.js:3610:5 › MacroEngine › Variable Shorthand Syntax › should handle decimal numbers with >= operator
+[270/557] frontend/MacroEngine.e2e.js:3620:5 › MacroEngine › Variable Shorthand Syntax › should handle decimal numbers with <= operator
+[271/557] frontend/MacroEngine.e2e.js:3632:5 › MacroEngine › Variable Shorthand Syntax › should use || with global variable
+[272/557] frontend/MacroEngine.e2e.js:3642:5 › MacroEngine › Variable Shorthand Syntax › should use ?? with global variable
+[273/557] frontend/MacroEngine.e2e.js:3650:5 › MacroEngine › Variable Shorthand Syntax › should use ||= with global variable
+[274/557] frontend/MacroEngine.e2e.js:3660:5 › MacroEngine › Variable Shorthand Syntax › should use ??= with global variable
+[275/557] frontend/MacroEngine.e2e.js:3668:5 › MacroEngine › Variable Shorthand Syntax › should use == with global variable
+[276/557] frontend/MacroEngine.e2e.js:3680:5 › MacroEngine › Variable Shorthand Syntax › should support nested macro in || fallback value
+[277/557] frontend/MacroEngine.e2e.js:3688:5 › MacroEngine › Variable Shorthand Syntax › should support nested macro in ?? fallback value
+[278/557] frontend/MacroEngine.e2e.js:3698:5 › MacroEngine › Variable Shorthand Syntax › should handle whitespace with || operator
+[279/557] frontend/MacroEngine.e2e.js:3706:5 › MacroEngine › Variable Shorthand Syntax › should handle whitespace with ?? operator
+[280/557] frontend/MacroEngine.e2e.js:3720:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should NOT evaluate ?? fallback when variable exists
+[281/557] frontend/MacroEngine.e2e.js:3743:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should NOT evaluate || fallback when variable is truthy
+[282/557] frontend/MacroEngine.e2e.js:3732:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should evaluate ?? fallback when variable does not exist
+[283/557] frontend/MacroEngine.e2e.js:3754:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should evaluate || fallback when variable is falsy
+[284/557] frontend/MacroEngine.e2e.js:3767:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should NOT evaluate ??= value when variable exists
+[285/557] frontend/MacroEngine.e2e.js:3778:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should evaluate ??= value when variable does not exist
+[286/557] frontend/MacroEngine.e2e.js:3789:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should NOT evaluate ||= value when variable is truthy
+[287/557] frontend/MacroEngine.e2e.js:3800:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should evaluate ||= value when variable is falsy
+[288/557] frontend/MacroEngine.e2e.js:3813:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should always evaluate = value expression
+[289/557] frontend/MacroEngine.e2e.js:3821:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should always evaluate += value expression
+[290/557] frontend/MacroEngine.e2e.js:3831:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should always evaluate == value expression
+[291/557] frontend/MacroEngine.e2e.js:3843:5 › MacroEngine › Variable Shorthand Lazy Evaluation › should only evaluate value expression once when needed
+[292/557] frontend/MacroEngine.e2e.js:3856:5 › MacroEngine › Variable Shorthand Edge Cases › should handle = operator with empty value
+[293/557] frontend/MacroEngine.e2e.js:3865:5 › MacroEngine › Variable Shorthand Edge Cases › should handle += operator with empty value
+[294/557] frontend/MacroEngine.e2e.js:3876:5 › MacroEngine › Variable Shorthand Edge Cases › should handle -= operator with empty value (non-numeric)
+[295/557] frontend/MacroEngine.e2e.js:3887:5 › MacroEngine › Variable Shorthand Edge Cases › should handle || operator with empty fallback
+[296/557] frontend/MacroEngine.e2e.js:3898:5 › MacroEngine › Variable Shorthand Edge Cases › should handle ?? operator with empty fallback
+[297/557] frontend/MacroEngine.e2e.js:3907:5 › MacroEngine › Variable Shorthand Edge Cases › should handle == operator with empty comparison value
+[298/557] frontend/MacroEngine.e2e.js:3918:5 › MacroEngine › Variable Shorthand Edge Cases › should handle == operator comparing non-empty to empty
+[299/557] frontend/MacroEngine.e2e.js:3931:5 › MacroEngine › Variable Shorthand Edge Cases › should return raw with trailing content after ++ operator
+[300/557] frontend/MacroEngine.e2e.js:3941:5 › MacroEngine › Variable Shorthand Edge Cases › should return empty with trailing content after -- operator
+[301/557] frontend/MacroEngine.e2e.js:3954:5 › MacroEngine › Variable Shorthand Edge Cases › should return raw with trailing content after -- operator separated by spaces
+[302/557] frontend/MacroEngine.e2e.js:3970:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should evaluate truthy local variable in if condition
+[303/557] frontend/MacroEngine.e2e.js:3982:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should evaluate falsy local variable in if condition
+[304/557] frontend/MacroEngine.e2e.js:3994:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should evaluate truthy global variable in if condition
+[305/557] frontend/MacroEngine.e2e.js:4018:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should evaluate inverted global variable condition
+[306/557] frontend/MacroEngine.e2e.js:4006:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should evaluate inverted variable condition
+[307/557] frontend/MacroEngine.e2e.js:4030:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should evaluate inverted condition with whitespace after !
+[308/557] frontend/MacroEngine.e2e.js:4042:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should treat non-existent variable as falsy in if condition
+[309/557] frontend/MacroEngine.e2e.js:4052:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should handle else branch with variable shorthand
+[310/557] frontend/MacroEngine.e2e.js:4064:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should handle variable with hyphen in if condition
+[311/557] frontend/MacroEngine.e2e.js:4076:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should work with variable set before if check
+[312/557] frontend/MacroEngine.e2e.js:4086:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should treat zero as falsy in if condition
+[313/557] frontend/MacroEngine.e2e.js:4098:5 › MacroEngine › Variable Shorthand in {{if}} Macro › should treat non-zero number as truthy in if condition
+[314/557] frontend/MacroEngine.e2e.js:4112:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should NOT execute setvar in false branch
+[315/557] frontend/MacroEngine.e2e.js:4140:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should execute setvar in true branch
+[316/557] frontend/MacroEngine.e2e.js:4166:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should only execute setvar in chosen else branch
+[317/557] frontend/MacroEngine.e2e.js:4192:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should only execute setvar in chosen then branch
+[318/557] frontend/MacroEngine.e2e.js:4218:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should execute multiple setvars only in chosen branch
+[319/557] frontend/MacroEngine.e2e.js:4247:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should handle nested if with delayed resolution
+[320/557] frontend/MacroEngine.e2e.js:4278:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should work with variable shorthand condition and delayed resolution
+[321/557] frontend/MacroEngine.e2e.js:4306:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should handle inline if inside scoped if with else
+[322/557] frontend/MacroEngine.e2e.js:4314:5 › MacroEngine › Delayed Argument Resolution ({{if}} branch isolation) › should correctly find outer else with multiple inline ifs
+[323/557] frontend/MacroEngine.e2e.js:4323:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should return true when local variable exists
+[324/557] frontend/MacroEngine.e2e.js:4333:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should return false when local variable does not exist
+[325/557] frontend/MacroEngine.e2e.js:4341:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should return true when local variable exists but is empty
+[326/557] frontend/MacroEngine.e2e.js:4353:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should return true when global variable exists
+[327/557] frontend/MacroEngine.e2e.js:4363:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should return false when global variable does not exist
+[328/557] frontend/MacroEngine.e2e.js:4373:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should delete local variable
+[329/557] frontend/MacroEngine.e2e.js:4385:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should delete global variable
+[330/557] frontend/MacroEngine.e2e.js:4397:5 › MacroEngine › Variable Macros (hasvar, deletevar) › should use hasvar in if condition
+[331/557] frontend/MacroEnvBuilder.e2e.js:5:3 › MacroEnvBuilder › builds names from overrides without relying on globals
+[332/557] frontend/MacroEnvBuilder.e2e.js:31:3 › MacroEnvBuilder › falls back to global name1/name2 when overrides are not provided
+[333/557] frontend/MacroEnvBuilder.e2e.js:56:3 › MacroEnvBuilder › does not populate character fields when replaceCharacterCard is false
+[334/557] frontend/MacroEnvBuilder.e2e.js:75:3 › MacroEnvBuilder › populates character fields when replaceCharacterCard is true
+[335/557] frontend/MacroEnvBuilder.e2e.js:96:3 › MacroEnvBuilder › wraps original string into a one-shot helper function
+[336/557] frontend/MacroEnvBuilder.e2e.js:126:3 › MacroEnvBuilder › does not expose original helper when original is not a string
+[337/557] frontend/MacroEnvBuilder.e2e.js:145:3 › MacroEnvBuilder › uses groupOverride string for all group-related name fields
+[338/557] frontend/MacroEnvBuilder.e2e.js:172:3 › MacroEnvBuilder › uses solo-chat semantics when no group is selected
+[339/557] frontend/MacroEnvBuilder.e2e.js:208:5 › MacroEnvBuilder › Dynamic macros in env › merges dynamicMacros properties into env.dynamicMacros
+[340/557] frontend/MacroEnvBuilder.e2e.js:229:5 › MacroEnvBuilder › Dynamic macros in env › normalizes dynamic macro keys to lowercase
+[341/557] frontend/MacroEnvBuilder.e2e.js:262:5 › MacroEnvBuilder › Dynamic macros in env › accepts string values for dynamic macros
+[342/557] frontend/MacroEnvBuilder.e2e.js:285:5 › MacroEnvBuilder › Dynamic macros in env › accepts handler functions for dynamic macros
+[343/557] frontend/MacroEnvBuilder.e2e.js:309:5 › MacroEnvBuilder › Dynamic macros in env › accepts MacroDefinitionOptions objects for dynamic macros
+[344/557] frontend/MacroEnvBuilder.e2e.js:345:5 › MacroEnvBuilder › Dynamic macros in env › supports mixed dynamic macro value types
+[345/557] frontend/MacroEnvBuilder.e2e.js:377:5 › MacroEnvBuilder › Dynamic macros in env › handles null dynamicMacros gracefully
+[346/557] frontend/MacroEnvBuilder.e2e.js:398:5 › MacroEnvBuilder › Dynamic macros in env › handles undefined dynamicMacros gracefully
+[347/557] frontend/MacroEnvBuilder.e2e.js:420:3 › MacroEnvBuilder › sets system.model field from getGeneratingModel helper
+[348/557] frontend/MacroEnvBuilder.e2e.js:438:3 › MacroEnvBuilder › applies providers in the expected order buckets
+[349/557] frontend/MacroEnvBuilder.e2e.js:474:3 › MacroEnvBuilder › ignores provider errors without breaking env construction
+[350/557] frontend/MacroLexer.e2e.js:13:5 › MacroLexer › General Macro › should handle macro only
+[351/557] frontend/MacroLexer.e2e.js:31:5 › MacroLexer › General Macro › should handle empty macro
+[352/557] frontend/MacroLexer.e2e.js:46:5 › MacroLexer › General Macro › should handle macro with leading and trailing whitespace inside
+[353/557] frontend/MacroLexer.e2e.js:64:5 › MacroLexer › General Macro › should handle multiple sequential macros
+[354/557] frontend/MacroLexer.e2e.js:93:5 › MacroLexer › Macro Nesting › should handle nested macros
+[355/557] frontend/MacroLexer.e2e.js:120:5 › MacroLexer › Macro Nesting › should handle macros with nested quotation marks
+[356/557] frontend/MacroLexer.e2e.js:161:5 › MacroLexer › Macro Identifier › should allow one-character macro identifiers
+[357/557] frontend/MacroLexer.e2e.js:179:5 › MacroLexer › Macro Identifier › should only capture the first identifier as macro identifier when there are whitespaces between two valid identifiers
+[358/557] frontend/MacroLexer.e2e.js:200:5 › MacroLexer › Macro Identifier › should allow numerics inside the macro identifier
+[359/557] frontend/MacroLexer.e2e.js:218:5 › MacroLexer › Macro Identifier › should allow capslock macro
+[360/557] frontend/MacroLexer.e2e.js:236:5 › MacroLexer › Macro Identifier › should allow dashes in macro identifiers
+[361/557] frontend/MacroLexer.e2e.js:254:5 › MacroLexer › Macro Identifier › should allow underscores as legacy in macro identifiers
+[362/557] frontend/MacroLexer.e2e.js:273:7 › MacroLexer › Macro Identifier › Error Cases (Macro Identifier) › [Error] should not lex special characters as part of the macro identifier
+[363/557] frontend/MacroLexer.e2e.js:300:7 › MacroLexer › Macro Identifier › Error Cases (Macro Identifier) › [Error] should not parse invalid chars in macro identifier as valid macro identifier
+[364/557] frontend/MacroLexer.e2e.js:330:5 › MacroLexer › Macro Arguments › should tokenize macros with double colons arguments correctly
+[365/557] frontend/MacroLexer.e2e.js:369:5 › MacroLexer › Macro Arguments › should handle named arguments with key=value syntax
+[366/557] frontend/MacroLexer.e2e.js:405:5 › MacroLexer › Macro Arguments › should handle named arguments with quotation marks
+[367/557] frontend/MacroLexer.e2e.js:441:5 › MacroLexer › Macro Arguments › should handle capslock argument name identifiers
+[368/557] frontend/MacroLexer.e2e.js:468:5 › MacroLexer › Macro Arguments › should handle argument name identifiers with dashes
+[369/557] frontend/MacroLexer.e2e.js:495:5 › MacroLexer › Macro Arguments › should handle legacy argument name identifiers
+[370/557] frontend/MacroLexer.e2e.js:522:5 › MacroLexer › Macro Arguments › should handle argument with legacy one colon syntax to start the arguments
+[371/557] frontend/MacroLexer.e2e.js:549:5 › MacroLexer › Macro Arguments › should handle multiple unnamed arguments in quotation marks
+[372/557] frontend/MacroLexer.e2e.js:603:5 › MacroLexer › Macro Arguments › should handle named arguments with mixed style
+[373/557] frontend/MacroLexer.e2e.js:651:5 › MacroLexer › Macro Arguments › should handle macros with empty named arguments
+[374/557] frontend/MacroLexer.e2e.js:675:5 › MacroLexer › Macro Arguments › should handle empty unnamed arguments if quoted
+[375/557] frontend/MacroLexer.e2e.js:705:5 › MacroLexer › Macro Arguments › should handle macros with special characters in arguments
+[376/557] frontend/MacroLexer.e2e.js:750:5 › MacroLexer › Macro Arguments › should handle long macros with multiple arguments
+[377/557] frontend/MacroLexer.e2e.js:813:5 › MacroLexer › Macro Arguments › should handle macros with complex argument patterns
+[378/557] frontend/MacroLexer.e2e.js:867:5 › MacroLexer › Macro Arguments › should handle pipe character in argument values (issue #5618)
+[379/557] frontend/MacroLexer.e2e.js:903:5 › MacroLexer › Macro Arguments › should handle multiple pipe characters in argument values
+[380/557] frontend/MacroLexer.e2e.js:947:5 › MacroLexer › Macro Execution Modifiers › should support ! flag
+[381/557] frontend/MacroLexer.e2e.js:968:5 › MacroLexer › Macro Execution Modifiers › should support ? flag
+[382/557] frontend/MacroLexer.e2e.js:989:5 › MacroLexer › Macro Execution Modifiers › should support ~ flag
+[383/557] frontend/MacroLexer.e2e.js:1010:5 › MacroLexer › Macro Execution Modifiers › should support / flag
+[384/557] frontend/MacroLexer.e2e.js:1031:5 › MacroLexer › Macro Execution Modifiers › should support legacy # flag
+[385/557] frontend/MacroLexer.e2e.js:1052:5 › MacroLexer › Macro Execution Modifiers › should allow whitespaces around flags
+[386/557] frontend/MacroLexer.e2e.js:1073:5 › MacroLexer › Macro Execution Modifiers › should support multiple flags
+[387/557] frontend/MacroLexer.e2e.js:1097:5 › MacroLexer › Macro Execution Modifiers › should support multiple flags with whitespace
+[388/557] frontend/MacroLexer.e2e.js:1121:5 › MacroLexer › Macro Execution Modifiers › should support > filter flag as separate token
+[389/557] frontend/MacroLexer.e2e.js:1142:5 › MacroLexer › Macro Execution Modifiers › should support filter flag combined with other flags
+[390/557] frontend/MacroLexer.e2e.js:1166:5 › MacroLexer › Macro Execution Modifiers › should not capture single letter as flag, but as macro identifiers
+[391/557] frontend/MacroLexer.e2e.js:1188:7 › MacroLexer › Macro Execution Modifiers › "Error" Cases (Macro Execution Modifiers) › should not capture unknown special characters as flag
+[392/557] frontend/MacroLexer.e2e.js:1211:7 › MacroLexer › Macro Execution Modifiers › "Error" Cases (Macro Execution Modifiers) › should not capture numbers as flag - they are also invalid macro identifiers
+[393/557] frontend/MacroLexer.e2e.js:1237:5 › MacroLexer › Variable Shorthand Syntax › should tokenize local variable shorthand
+[394/557] frontend/MacroLexer.e2e.js:1259:5 › MacroLexer › Variable Shorthand Syntax › should tokenize global variable shorthand
+[395/557] frontend/MacroLexer.e2e.js:1281:5 › MacroLexer › Variable Shorthand Syntax › should tokenize variable with hyphen in name
+[396/557] frontend/MacroLexer.e2e.js:1303:5 › MacroLexer › Variable Shorthand Syntax › should tokenize increment operator
+[397/557] frontend/MacroLexer.e2e.js:1328:5 › MacroLexer › Variable Shorthand Syntax › should tokenize decrement operator
+[398/557] frontend/MacroLexer.e2e.js:1353:5 › MacroLexer › Variable Shorthand Syntax › should tokenize set operator with value
+[399/557] frontend/MacroLexer.e2e.js:1381:5 › MacroLexer › Variable Shorthand Syntax › should tokenize add operator with value
+[400/557] frontend/MacroLexer.e2e.js:1409:5 › MacroLexer › Variable Shorthand Syntax › should tokenize variable prefix after flags
+[401/557] frontend/MacroLexer.e2e.js:1436:5 › MacroLexer › Variable Shorthand Syntax › should tokenize variable with multiple hyphens
+[402/557] frontend/MacroLexer.e2e.js:1458:5 › MacroLexer › Variable Shorthand Syntax › should tokenize nested macro in variable value
+[403/557] frontend/MacroLexer.e2e.js:1495:5 › MacroLexer › Variable Shorthand Syntax › should tokenize variable shorthand with surrounding whitespace
+[404/557] frontend/MacroLexer.e2e.js:1517:5 › MacroLexer › Variable Shorthand Syntax › should tokenize variable with numbers in name
+[405/557] frontend/MacroLexer.e2e.js:1539:5 › MacroLexer › Variable Shorthand Syntax › should tokenize variable with underscore in name
+[406/557] frontend/MacroLexer.e2e.js:1561:5 › MacroLexer › Variable Shorthand Syntax › should tokenize increment operator with surrounding whitespace
+[407/557] frontend/MacroLexer.e2e.js:1589:5 › MacroLexer › Macro Output Modifiers › should support output modifier without arguments
+[408/557] frontend/MacroLexer.e2e.js:1613:5 › MacroLexer › Macro Output Modifiers › should support output modifier with named arguments
+[409/557] frontend/MacroLexer.e2e.js:1655:5 › MacroLexer › Macro Output Modifiers › should support output modifier with unnamed arguments
+[410/557] frontend/MacroLexer.e2e.js:1697:5 › MacroLexer › Macro Output Modifiers › should support macro arguments before output modifier
+[411/557] frontend/MacroLexer.e2e.js:1748:5 › MacroLexer › Macro Output Modifiers › should support chaining multiple output modifiers
+[412/557] frontend/MacroLexer.e2e.js:1778:5 › MacroLexer › Macro Output Modifiers › should support chaining multiple output modifiers with arguments
+[413/557] frontend/MacroLexer.e2e.js:1826:5 › MacroLexer › Macro Output Modifiers › should support output modifiers without whitespace
+[414/557] frontend/MacroLexer.e2e.js:1850:5 › MacroLexer › Macro Output Modifiers › should support escaped pipes, not treating them as output modifiers
+[415/557] frontend/MacroLexer.e2e.js:1881:7 › MacroLexer › Macro Output Modifiers › Error Cases (Macro Output Modifiers) › should not capture when starting the macro with a pipe
+[416/557] frontend/MacroLexer.e2e.js:1902:7 › MacroLexer › Macro Output Modifiers › Error Cases (Macro Output Modifiers) › [Error] should not allow special characters inside output modifier identifier
+[417/557] frontend/MacroLexer.e2e.js:1933:7 › MacroLexer › Macro Output Modifiers › Error Cases (Macro Output Modifiers) › [Error] should not allow output modifiers to have execution modifiers
+[418/557] frontend/MacroLexer.e2e.js:1964:7 › MacroLexer › Macro Output Modifiers › Error Cases (Macro Output Modifiers) › [Error] should not allow invalid identifier starting with a number
+[419/557] frontend/MacroLexer.e2e.js:1995:7 › MacroLexer › Macro Output Modifiers › Error Cases (Macro Output Modifiers) › [Error] should not allow double pipe used without an identifier
+[420/557] frontend/MacroLexer.e2e.js:2029:5 › MacroLexer › Macro While Typing.. › should allow unclosed macros, but tries to parse it as a macro
+[421/557] frontend/MacroLexer.e2e.js:2064:5 › MacroLexer › Macro and Plaintext › should handle basic macro tokenization
+[422/557] frontend/MacroLexer.e2e.js:2090:5 › MacroLexer › Macro and Plaintext › should tokenize plaintext only
+[423/557] frontend/MacroLexer.e2e.js:2104:5 › MacroLexer › "Error" Cases in Macro Lexing › should treat unopened macros as simple plaintext
+[424/557] frontend/MacroLexer.e2e.js:2116:5 › MacroLexer › "Error" Cases in Macro Lexing › should treat opening/closing with whitspaces between brackets not as macros
+[425/557] frontend/MacroLexer.e2e.js:2128:5 › MacroLexer › "Error" Cases in Macro Lexing › should handle valid macro correctly after an invalid macro
+[426/557] frontend/MacroParser.e2e.js:17:5 › MacroParser › General Macro › should parse a simple macro
+[427/557] frontend/MacroParser.e2e.js:30:5 › MacroParser › General Macro › should generally handle whitespaces
+[428/557] frontend/MacroParser.e2e.js:44:7 › MacroParser › General Macro › Error Cases (General Macro) › [Error] should throw an error for empty macro
+[429/557] frontend/MacroParser.e2e.js:61:7 › MacroParser › General Macro › Error Cases (General Macro) › [Error] should throw an error for invalid identifier
+[430/557] frontend/MacroParser.e2e.js:78:7 › MacroParser › General Macro › Error Cases (General Macro) › [Error] should throw an error for incomplete macro
+[431/557] frontend/MacroParser.e2e.js:95:7 › MacroParser › General Macro › Error Cases (General Macro) › [Error] for testing purposes, macros need to start at the beginning of the string
+[432/557] frontend/MacroParser.e2e.js:114:5 › MacroParser › Arguments Handling › should parse macros with double-colon argument
+[433/557] frontend/MacroParser.e2e.js:133:5 › MacroParser › Arguments Handling › should parse macros with single colon argument
+[434/557] frontend/MacroParser.e2e.js:152:5 › MacroParser › Arguments Handling › should parse macros with multiple double-colon arguments
+[435/557] frontend/MacroParser.e2e.js:172:5 › MacroParser › Arguments Handling › should strip spaces around arguments
+[436/557] frontend/MacroParser.e2e.js:191:5 › MacroParser › Arguments Handling › should treat single colons as part of the argument with double-colon separator
+[437/557] frontend/MacroParser.e2e.js:211:5 › MacroParser › Arguments Handling › should treat single colons as part of the argument even with colon separator
+[438/557] frontend/MacroParser.e2e.js:230:5 › MacroParser › Arguments Handling › should parse double-colon with an empty argument value
+[439/557] frontend/MacroParser.e2e.js:250:5 › MacroParser › Legacy Macros › should parse legacy roll macro with whitespace separator
+[440/557] frontend/MacroParser.e2e.js:268:5 › MacroParser › Legacy Macros › should parse legacy roll macro with explicit colon separator
+[441/557] frontend/MacroParser.e2e.js:287:5 › MacroParser › Legacy Macros › should parse legacy roll macro with numeric argument
+[442/557] frontend/MacroParser.e2e.js:305:5 › MacroParser › Legacy Macros › should parse reverse legacy macro with colon argument
+[443/557] frontend/MacroParser.e2e.js:324:5 › MacroParser › Legacy Macros › should parse legacy single colon argument that allows double colons inside the argument
+[444/557] frontend/MacroParser.e2e.js:344:5 › MacroParser › Legacy Macros › should parse legacy comment macro
+[445/557] frontend/MacroParser.e2e.js:362:5 › MacroParser › Legacy Macros › should parse legacy datetime format macro
+[446/557] frontend/MacroParser.e2e.js:401:5 › MacroParser › Legacy Macros › should parse legacy macro with empty quoted argument
+[447/557] frontend/MacroParser.e2e.js:383:5 › MacroParser › Legacy Macros › should parse legacy banned macro with quoted argument
+[448/557] frontend/MacroParser.e2e.js:419:5 › MacroParser › Legacy Macros › should allow legacy setvar with empty value argument
+[449/557] frontend/MacroParser.e2e.js:439:5 › MacroParser › Comment Macros › should parse comment macro without whitespace
+[450/557] frontend/MacroParser.e2e.js:457:5 › MacroParser › Comment Macros › should parse comment macro with whitespace
+[451/557] frontend/MacroParser.e2e.js:475:5 › MacroParser › Comment Macros › should parse comment macro with special characters
+[452/557] frontend/MacroParser.e2e.js:493:5 › MacroParser › Comment Macros › should parse comment macro starting with flags
+[453/557] frontend/MacroParser.e2e.js:513:5 › MacroParser › Comment Macros › should parse multiline comments
+[454/557] frontend/MacroParser.e2e.js:534:5 › MacroParser › Nested Macros › should parse nested macros inside arguments
+[455/557] frontend/MacroParser.e2e.js:558:5 › MacroParser › Nested Macros › should parse two nested macros next to each other inside an argument
+[456/557] frontend/MacroParser.e2e.js:586:7 › MacroParser › Nested Macros › Error Cases (Nested Macros) › [Error] should throw when there is a nested macro instead of an identifier
+[457/557] frontend/MacroParser.e2e.js:599:7 › MacroParser › Nested Macros › Error Cases (Nested Macros) › [Error] should throw when there is a macro inside an identifier
+[458/557] frontend/MacroParser.e2e.js:614:5 › MacroParser › Macro Flags › should parse macro with single flag
+[459/557] frontend/MacroParser.e2e.js:628:5 › MacroParser › Macro Flags › should parse macro with delayed flag
+[460/557] frontend/MacroParser.e2e.js:642:5 › MacroParser › Macro Flags › should parse macro with closing block flag
+[461/557] frontend/MacroParser.e2e.js:656:5 › MacroParser › Macro Flags › should parse macro with filter flag
+[462/557] frontend/MacroParser.e2e.js:670:5 › MacroParser › Macro Flags › should parse macro with multiple flags
+[463/557] frontend/MacroParser.e2e.js:684:5 › MacroParser › Macro Flags › should parse macro with flags and whitespace
+[464/557] frontend/MacroParser.e2e.js:698:5 › MacroParser › Macro Flags › should parse macro with legacy hash flag
+[465/557] frontend/MacroParser.e2e.js:712:5 › MacroParser › Macro Flags › should parse macro with flag and arguments
+[466/557] frontend/MacroParser.e2e.js:733:5 › MacroParser › Variable Shorthand Syntax › should parse local variable shorthand
+[467/557] frontend/MacroParser.e2e.js:749:5 › MacroParser › Variable Shorthand Syntax › should parse global variable shorthand
+[468/557] frontend/MacroParser.e2e.js:765:5 › MacroParser › Variable Shorthand Syntax › should parse variable with hyphen in name
+[469/557] frontend/MacroParser.e2e.js:781:5 › MacroParser › Variable Shorthand Syntax › should parse variable set shorthand
+[470/557] frontend/MacroParser.e2e.js:803:5 › MacroParser › Variable Shorthand Syntax › should parse variable increment shorthand
+[471/557] frontend/MacroParser.e2e.js:822:5 › MacroParser › Variable Shorthand Syntax › should parse global variable decrement shorthand
+[472/557] frontend/MacroParser.e2e.js:841:5 › MacroParser › Variable Shorthand Syntax › should parse variable add shorthand
+[473/557] frontend/MacroParser.e2e.js:863:5 › MacroParser › Variable Shorthand Syntax › should parse nested macro in variable value
+[474/557] frontend/MacroParser.e2e.js:890:5 › MacroParser › Variable Shorthand Syntax › should parse variable shorthand with whitespace
+[475/557] frontend/MacroRegistry.e2e.js:7:5 › MacroRegistry › register valid › should register a macro with valid options
+[476/557] frontend/MacroRegistry.e2e.js:52:5 › MacroRegistry › register reject › should reject invalid macro name
+[477/557] frontend/MacroRegistry.e2e.js:66:5 › MacroRegistry › register reject › should reject invalid options object
+[478/557] frontend/MacroRegistry.e2e.js:80:5 › MacroRegistry › register reject › should reject invalid handler
+[479/557] frontend/MacroRegistry.e2e.js:96:5 › MacroRegistry › register reject › should reject invalid unnamedArgs
+[480/557] frontend/MacroRegistry.e2e.js:112:5 › MacroRegistry › register reject › should reject invalid strictArgs
+[481/557] frontend/MacroRegistry.e2e.js:128:5 › MacroRegistry › register reject › should reject invalid list configuration
+[482/557] frontend/MacroRegistry.e2e.js:144:5 › MacroRegistry › register reject › should reject invalid list.min
+[483/557] frontend/MacroRegistry.e2e.js:162:5 › MacroRegistry › register reject › should reject invalid list.max
+[484/557] frontend/MacroRegistry.e2e.js:181:5 › MacroRegistry › register reject › should reject invalid description
+[485/557] frontend/MacroRegistry.e2e.js:199:5 › MacroRegistry › identifier validation › should accept valid identifier with letters only
+[486/557] frontend/MacroRegistry.e2e.js:209:5 › MacroRegistry › identifier validation › should accept valid identifier with hyphens
+[487/557] frontend/MacroRegistry.e2e.js:219:5 › MacroRegistry › identifier validation › should accept valid identifier with underscores
+[488/557] frontend/MacroRegistry.e2e.js:229:5 › MacroRegistry › identifier validation › should accept valid identifier with digits after first char
+[489/557] frontend/MacroRegistry.e2e.js:239:5 › MacroRegistry › identifier validation › should reject identifier starting with digit
+[490/557] frontend/MacroRegistry.e2e.js:250:5 › MacroRegistry › identifier validation › should reject identifier starting with hyphen
+[491/557] frontend/MacroRegistry.e2e.js:261:5 › MacroRegistry › identifier validation › should reject identifier with special characters
+[492/557] frontend/MacroRegistry.e2e.js:272:5 › MacroRegistry › identifier validation › should reject identifier with spaces
+[493/557] frontend/MacroRegistry.e2e.js:283:5 › MacroRegistry › identifier validation › should accept valid alias identifier
+[494/557] frontend/MacroRegistry.e2e.js:297:5 › MacroRegistry › identifier validation › should reject invalid alias identifier
+[495/557] frontend/MacroRegistry.e2e.js:315:7 › MacroRegistry › registerMacroAlias › valid › should register an alias for an existing macro
+[496/557] frontend/MacroRegistry.e2e.js:380:7 › MacroRegistry › registerMacroAlias › valid › should resolve alias of alias to primary definition
+[497/557] frontend/MacroRegistry.e2e.js:354:7 › MacroRegistry › registerMacroAlias › valid › should register alias with visible=false option
+[498/557] frontend/MacroRegistry.e2e.js:413:7 › MacroRegistry › registerMacroAlias › valid › should have independent source for alias
+[499/557] frontend/MacroRegistry.e2e.js:442:7 › MacroRegistry › registerMacroAlias › valid › should be case-insensitive for lookup
+[500/557] frontend/MacroRegistry.e2e.js:468:7 › MacroRegistry › registerMacroAlias › reject › should reject invalid alias name
+[501/557] frontend/MacroRegistry.e2e.js:482:7 › MacroRegistry › registerMacroAlias › reject › should reject alias same as target name (case insensitive)
+[502/557] frontend/MacroRegistry.e2e.js:495:7 › MacroRegistry › registerMacroAlias › reject › should reject alias for non-existent target macro
+[503/557] frontend/MacroRegistry.e2e.js:508:7 › MacroRegistry › registerMacroAlias › reject › should reject alias with special characters
+[504/557] frontend/MacroRegistry.e2e.js:574:7 › MacroRegistry › registerMacroAlias › warnings › should warn when alias overwrites another alias
+[505/557] frontend/MacroRegistry.e2e.js:519:7 › MacroRegistry › registerMacroAlias › reject › should reject alias starting with hyphen
+[506/557] frontend/MacroRegistry.e2e.js:532:7 › MacroRegistry › registerMacroAlias › warnings › should warn when alias overwrites existing macro
+[507/557] frontend/MacroSlashCommands.e2e.js:6:5 › MacroSlashCommands › Parser Flags › should bypass REPLACE_GETVAR
+[508/557] frontend/MacroSlashCommands.e2e.js:23:5 › MacroSlashCommands › {{pipe}} Macro › should support {{pipe}} macro
+[509/557] frontend/MacroSlashCommands.e2e.js:40:5 › MacroSlashCommands › {{var}} Macro › should support {{var::key}} macro
+[510/557] frontend/MacroSlashCommands.e2e.js:55:5 › MacroSlashCommands › {{var}} Macro › should support {{var::key::index}} macro
+[511/557] frontend/MacroSlashCommands.e2e.js:70:5 › MacroSlashCommands › {{var}} Macro › should not fail on unknown variable keys
+[512/557] frontend/MacroSlashCommands.e2e.js:85:5 › MacroSlashCommands › {{var}} Macro › should not fail on out-of-bounds variable index
+[513/557] frontend/MacroSlashCommands.e2e.js:102:5 › MacroSlashCommands › {{arg}} Macro › should support {{arg}} macro with plain value
+[514/557] frontend/MacroSlashCommands.e2e.js:117:5 › MacroSlashCommands › {{arg}} Macro › should support {{arg}} macro with closure value
+[515/557] frontend/MacroSlashCommands.e2e.js:132:5 › MacroSlashCommands › {{arg}} Macro › should support mixed type {{arg}} macro values
+[516/557] frontend/MacroSlashCommands.e2e.js:147:5 › MacroSlashCommands › {{arg}} Macro › should support wildcard {{arg}} macro
+[517/557] frontend/MacroSlashCommands.e2e.js:164:5 › MacroSlashCommands › Custom Scope Macros › should support {{timesIndex}} in /times command
+[518/557] frontend/MacroSlashCommands.e2e.js:179:5 › MacroSlashCommands › Custom Scope Macros › should support custom SlashCommandScope macros
+[519/557] frontend/MacrosParser.e2e.js:10:3 › MacrosParser (legacy shim) › should resolve macros via legacy evaluateMacros when experimental engine is disabled
+[520/557] frontend/MacrosParser.e2e.js:30:3 › MacrosParser (legacy shim) › should resolve macros via new engine when experimental engine is enabled
+[521/557] frontend/MacroStoryString.e2e.js:21:3 › MacroStoryString › should produce equivalent story strings with new macro engine
+[522/557] frontend/MessageFormatter.e2e.js:18:5 › MessageFormatter › Module exports & singleton › should export formatting_stage with expected keys
+[523/557] frontend/MessageFormatter.e2e.js:34:5 › MessageFormatter › Module exports & singleton › should export hook_order with expected keys
+[524/557] frontend/MessageFormatter.e2e.js:52:5 › MessageFormatter › Module exports & singleton › should expose stage and order constants on the instance
+[525/557] frontend/MessageFormatter.e2e.js:77:5 › MessageFormatter › addHook — registration validation › should throw TypeError when registering a non-function hook
+[526/557] frontend/MessageFormatter.e2e.js:106:5 › MessageFormatter › addHook — registration validation › should throw TypeError when registering an async hook
+[527/557] frontend/MessageFormatter.e2e.js:128:5 › MessageFormatter › addHook — registration validation › should throw RangeError when registering a hook with an unknown stage
+[528/557] frontend/MessageFormatter.e2e.js:153:5 › MessageFormatter › addHook — registration validation › should successfully register a valid synchronous hook
+[529/557] frontend/MessageFormatter.e2e.js:185:5 › MessageFormatter › runStage — hook execution › should return the message unchanged when no hooks are registered for a stage
+[530/557] frontend/MessageFormatter.e2e.js:208:5 › MessageFormatter › runStage — hook execution › should apply a registered hook and return the transformed text
+[531/557] frontend/MessageFormatter.e2e.js:231:5 › MessageFormatter › runStage — hook execution › should pass an immutable frozen context to hooks
+[532/557] frontend/MessageFormatter.e2e.js:261:5 › MessageFormatter › runStage — hook execution › should inject the correct stage into the context
+[533/557] frontend/MessageFormatter.e2e.js:293:5 › MessageFormatter › runStage — hook execution › should run hooks in ascending order within a stage
+[534/557] frontend/MessageFormatter.e2e.js:332:5 › MessageFormatter › runStage — hook execution › should continue pipeline and skip a hook that throws
+[535/557] frontend/MessageFormatter.e2e.js:366:5 › MessageFormatter › runStage — hook execution › should ignore a hook that returns a non-string and keep the previous text
+[536/557] frontend/MessageFormatter.e2e.js:410:5 › MessageFormatter › runStage — hook execution › should warn and keep text when a hook returns a Promise (simulated async escape)
+[537/557] frontend/MessageStyleBlocks.e2e.js:27:3 › Style blocks in messages › a style block keeps its rules scoped to the message
+[538/557] frontend/MessageStyleBlocks.e2e.js:35:3 › Style blocks in messages › a style block keeps strings and child selectors
+[539/557] frontend/QuickReplyOverwriteCancel.e2e.js:6:5 › Quick Reply overwrite cancellation › should keep the existing set when create overwrite is cancelled
+[540/557] frontend/QuickReplyOverwriteCancel.e2e.js:6:5 › Quick Reply overwrite cancellation › should keep the existing set when import overwrite is cancelled
+[541/557] frontend/ReasoningHiddenBlocks.e2e.js:44:3 › Reasoning hidden blocks › keeps unrelated hidden reasoning blocks hidden while another block is being edited
+[542/557] frontend/ReasoningHiddenBlocks.e2e.js:114:3 › Reasoning hidden blocks › hides add reasoning button while hidden-like reasoning is being edited
+[543/557] frontend/ReasoningHiddenBlocks.e2e.js:152:3 › Reasoning hidden blocks › does not create duplicate reasoning editors when add is clicked repeatedly
+[544/557] frontend/ReasoningHiddenBlocks.e2e.js:212:3 › Reasoning hidden blocks › close all collapses stale open hidden-like reasoning details
+[545/557] frontend/ReasoningHiddenBlocks.e2e.js:271:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after confirming edit with show hidden enabled
+[546/557] frontend/ReasoningHiddenBlocks.e2e.js:321:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after canceling edit with show hidden enabled
+[547/557] frontend/ReasoningHiddenBlocks.e2e.js:368:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after confirming message edit with reasoning edit open
+[548/557] frontend/ReasoningHiddenBlocks.e2e.js:427:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after canceling message edit with reasoning edit open
+[549/557] frontend/ReasoningHiddenBlocks.e2e.js:486:3 › Reasoning hidden blocks › keeps whitespace-only reasoning collapsed when auto-expand is enabled
+[550/557] frontend/ReasoningHiddenBlocks.e2e.js:527:3 › Reasoning hidden blocks › treats whitespace-only reasoning as hidden-like when trim spaces is disabled
+[551/557] frontend/ReasoningHiddenBlocks.e2e.js:580:3 › Reasoning hidden blocks › does not expand whitespace-only reasoning through slash commands
+[552/557] frontend/ReasoningHiddenBlocks.e2e.js:616:3 › Reasoning hidden blocks › expands visible reasoning through slash commands
+  1) frontend/ReasoningHiddenBlocks.e2e.js:368:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after confirming message edit with reasoning edit open
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 2
+    + Received  + 1
+
+    -
+    -
+    + undefined
+
+      438 |         expect(result.afterDone.detailsOpen).toBe(false);
+      439 |         expect(result.afterDone.messageValue).toBe('Foo edited');
+    > 440 |         expect(result.afterDone.reasoningValue).toBe('\n');
+          |                                                 ^
+      441 |     });
+      442 |
+      443 |     test('collapses whitespace-only reasoning after canceling message edit with reasoning edit open', async ({ page }) => {
+        at <repo>/tests/frontend/ReasoningHiddenBlocks.e2e.js:440:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/frontend-ReasoningHiddenBl-7981a-it-with-reasoning-edit-open/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/frontend-ReasoningHiddenBl-7981a-it-with-reasoning-edit-open/error-context.md
+
+
+[553/557] frontend/ReasoningHiddenBlocks.e2e.js:699:3 › Reasoning hidden blocks › collapses reasoning after changing whitespace-only reasoning to different whitespace
+(node:27846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:27846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[554/557] frontend/ReasoningHiddenBlocks.e2e.js:657:3 › Reasoning hidden blocks › keeps reasoning expanded after changing whitespace-only reasoning to visible content
+[555/557] frontend/WorldInfoRenameChatLore.e2e.js:5:3 › World Info Rename Chat Lore › should retarget chat lore metadata after lorebook rename
+[556/557] frontend/WorldInfoRenamePersonaLore.e2e.js:5:3 › World Info Rename Persona Lore › should retarget persona lore metadata after lorebook rename
+  2) frontend/ReasoningHiddenBlocks.e2e.js:699:3 › Reasoning hidden blocks › collapses reasoning after changing whitespace-only reasoning to different whitespace
+
+    Error: expect(received).toBeNull()
+
+    Received: "true"
+
+      736 |
+      737 |         expect(result.textareaCount).toBe(0);
+    > 738 |         expect(result.hasContent).toBeNull();
+          |                                   ^
+      739 |         expect(result.detailsOpen).toBe(false);
+      740 |     });
+      741 | });
+        at <repo>/tests/frontend/ReasoningHiddenBlocks.e2e.js:738:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/frontend-ReasoningHiddenBl-74d7a-ing-to-different-whitespace/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/frontend-ReasoningHiddenBl-74d7a-ing-to-different-whitespace/error-context.md
+
+
+(node:28099) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:28099) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[557/557] sample.e2e.js:11:3 › sample › should be titled "SillyTavern"
+  3) frontend/ReasoningHiddenBlocks.e2e.js:657:3 › Reasoning hidden blocks › keeps reasoning expanded after changing whitespace-only reasoning to visible content
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "visible reasoning"
+    Received string:    "undefined"
+
+      701 |         expect(result.hasContent).toBe('true');
+      702 |         expect(result.detailsOpen).toBe(true);
+    > 703 |         expect(result.reasoningText).toContain('visible reasoning');
+          |                                      ^
+      704 |     });
+      705 |
+      706 |     test('collapses reasoning after changing whitespace-only reasoning to different whitespace', async ({ page }) => {
+        at <repo>/tests/frontend/ReasoningHiddenBlocks.e2e.js:703:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/frontend-ReasoningHiddenBl-6dd3b-easoning-to-visible-content/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/frontend-ReasoningHiddenBl-6dd3b-easoning-to-visible-content/error-context.md
+
+
+  3 failed
+    frontend/ReasoningHiddenBlocks.e2e.js:368:3 › Reasoning hidden blocks › collapses whitespace-only reasoning after confirming message edit with reasoning edit open
+    frontend/ReasoningHiddenBlocks.e2e.js:657:3 › Reasoning hidden blocks › keeps reasoning expanded after changing whitespace-only reasoning to visible content
+    frontend/ReasoningHiddenBlocks.e2e.js:699:3 › Reasoning hidden blocks › collapses reasoning after changing whitespace-only reasoning to different whitespace
+  13 skipped
+  541 passed (11.5m)
